@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Clean the branch that they aren't in the server
+#?? 1.0.0
+##?
+##? Usage:
+##?    git-prune
+
+docs::eval "$@"
+
+git remote prune origin
+echo 'Prune branch done! 💩💩💩'

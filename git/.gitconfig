@@ -1,0 +1,29 @@
+[user]
+	name = Antonio Martin
+    email = antoniomartinescalera@gmail.com
+
+[includeIf "gitdir:$HOME/projects/optima/"]
+    path = $HOME/projects/optima/.gitconfig
+
+[core]
+	excludesfile = /Users/amartin/.gitignore_global
+	autocrlf = input
+	editor = vim
+[http]
+[push]
+	default = simple
+[color]
+	ui = auto
+[pager]
+	branch = false
+	log = false
+[pull]
+	rebase = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Devs/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/amartin/.stCommitMsg

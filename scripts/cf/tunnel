@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+#set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Create a tunnel for pcf
+#?? 1.0.0
+##?
+##? Usage:
+##?   tunnel $environment
+#docs::eval "$@"
+
+function printHelp() {
+  if [ -z "$1" ]; then
+    echo "First parameter is required"
+    echo "  ci - tunnel to pre-ci database"
+    echo "  ci2 - tunnel to pre-ci new database"
+    echo "  uat - tunnel to pre-uat database"
+    echo "  elastic - tunnel to elastic pre-ci"
+    exit;
+fi
+}
+
+printHelp $1
+pcf_env=$1
+
+if [[ $pcf_env = 'ci' ]]
+  then
+    echo 'tunnel to pre-ci database'
+    cf ssh -L 5432:cf-8d069d40-0fae-4639-bd1b-abdf3086b32d.csofmciuo9xu.eu-west-2.rds.amazonaws.com:5432 fp-inbound
+elif [[ $pcf_env = 'ci2' ]]
+  then
+    echo 'tunnel to pre-ci new database'
+    cf ssh -L 5432:postgres-preci-perf-testing.csofmciuo9xu.eu-west-2.rds.amazonaws.com:5432 validator
+elif [[ $pcf_env = 'uat' ]]
+  then
+    echo 'tunnel to pre-uat database'
+    cf ssh -L 5432:cf-c5c19030-436a-4383-85cd-98b4047a7271.csofmciuo9xu.eu-west-2.rds.amazonaws.com:5432 fp-inbound-gateway
+elif [[ $pcf_env = 'elastic' ]]
+  then
+    echo 'tunnel to elastic pre-ci'
+    cf sshcf ssh -L 9200:data-domain-elastic-preci-elasti-d3d685fd629a093b.elb.eu-west-2.amazonaws.com:9200 payhub-data-api
+fi
+
+
