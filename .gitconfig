@@ -1,0 +1,13 @@
+[user]
+	name = Antonio Martin
+	email = antoniomeh@gmail.com
+
+[core]
+	excludesfile = $HOME/.gitignore_global
+	autocrlf = input
+	editor = vim
+[http]
+[push]
+	default = simple
+[color]
+	ui = auto

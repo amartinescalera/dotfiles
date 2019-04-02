@@ -1,0 +1,13 @@
+# 📁 Directories
+
+alias cdd='cd ~/dev'
+alias cdw="cdd; cd work"
+alias cdc='cdw; cd codelytv'
+alias ll='ls -lah'
+alias lla='ls -l'
+alias vbox='VBoxManage'
+
+# 📱 Apps
+
+# Update process based on https://docs.brew.sh/FAQ
+alias upda='brew update; brew outdated; brew upgrade; brew cleanup; mas upgrade'
