@@ -79,7 +79,6 @@ declare -a mas_apps=(
   '1180531112' # DeskApp for YouTube (1.3)
   '425424353'  # The Unarchiver
   '408981434'  # iMovie
-  '409183694'  # Keynote
 )
 
 for app in "${mas_apps[@]}"; do
