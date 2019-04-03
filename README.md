@@ -280,3 +280,4 @@ Voice Memos
 # Parallels Desktop
 # AdobeCS (none)
 # Sketch (none)
+  '409183694'  # Keynote
