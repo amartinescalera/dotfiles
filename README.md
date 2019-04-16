@@ -4,11 +4,8 @@
 <img align="left" width="0" height="192px" hspace="10"/>
 
 > 🐢   💨 Speedup your MacOS setup with this fine tuning settings
-[![License](https://img.shields.io/github/license/CodelyTV/scala-http-api.svg?style=flat-square)](LICENSE)
 
-Repository containing all the automations required to setup your MacOS in just a few seconds after a fresh install.
-
-Feel free to explore the repository and get anything you need 😬
+Repository containing all the automations required to setup your MacOS in just a few seconds after a fresh install. This is my own configuration from CodelyTV in the repository: https://github.com/CodelyTV/dotfiles, for any doubts or more information go to the original copy.
 
 ## 📜 Table of Contents
 
