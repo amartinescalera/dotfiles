@@ -20,8 +20,8 @@
     * [🤖 Shell scripts](#-shell-scripts)
         * [🍎 `install_macos_apps.sh`](#-install_macos_appssh)
         * [🎛️ `adjust_macos_settings.sh`](#-adjust_macos_settingssh)
-        * [:snake: `Another Scripts`](#-another-scripts)
-* [ℹ️ :mortar_board: My Apps instaled](#-my-apps-instaled)
+        * [🐍 `Another Scripts`](#-another-scripts)
+* [🎓 My Apps instaled](#-my-apps-instaled)
 * [ℹ️ About](#-about)
 * [⚖️ License](#-license)
 
@@ -98,12 +98,11 @@ This script will modify system preferences. We would recommend you to [take a lo
 * Safari & WebKit: Allow hitting the Backspace key to go to the previous page + show full URL + disable automatic spelling corrections…
 * Others: Disable the sound effects on boot + always show scrollbars + disable automatic capitalization + Avoid creating .DS_Store files on network or USB volumes + Maximize windows with `Ctrl+alt+Cmd+f`…
 
-#### :snake: Another Scripts
+#### 🐍Another Scripts
 * [`tube.sh`](tube.sh): Using youtube-dl extract the audio from youtbue videos
 * [`chrome.sh`](chrome.sh) and [`connect.sh`](connect.sh): Used for connect to the vpn using Google SDK and watch the sparkui
 
-#### :mortar_board: My Apps instaled
-
+## 🎓My Apps instaled
       * Adobe Acrobat Reader DC
       * App Store
       * Automator
