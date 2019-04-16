@@ -48,7 +48,6 @@
    * Parallels Desktop
    * AdobeCS
    * Sketch
-
 ## ✍️ Repository Contents
 
 You'll find some self-explanatory files in this repo containing comments on what they do, however, here you have a brief explanation of each on of them.
