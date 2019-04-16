@@ -66,6 +66,7 @@ declare -a brew_cli_tools=(
   'sbt'
   'hugo'
   'autojump'
+  'maven'
 )
 
 for tool in "${brew_cli_tools[@]}"; do
