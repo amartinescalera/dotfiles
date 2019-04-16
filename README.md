@@ -1,10 +1,13 @@
 # 🚀 amartinescalera dotfiles
 
 <img src="http://www.nemedus.org/wp-content/uploads/2018/12/AntonioMartinMinimal.png" align="left" width="544px" height="258px"/>
+<img align="left" width="0" height="258px" hspace="10"/>
 
-🐢   💨 Speedup your MacOS setup with this fine tuning settings
+💨 Speedup your MacOS setup with this fine tuning settings
 
-Repository containing all the automations required to setup your MacOS in just a few seconds after a fresh install. This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles), for any doubts or more information go to the original copy.
+:scream_cat: Repository containing all the automations required to setup my MacOS in just a few seconds after a fresh install.
+
+:registered: This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles), for any doubts or more information go to the original copy.
 
 ## 📜 Table of Contents
 
@@ -96,6 +99,10 @@ This script will modify system preferences. We would recommend you to [take a lo
 * Mission Control: Add Hot corners behaviour and reduce the animation time
 * Safari & WebKit: Allow hitting the Backspace key to go to the previous page + show full URL + disable automatic spelling corrections…
 * Others: Disable the sound effects on boot + always show scrollbars + disable automatic capitalization + Avoid creating .DS_Store files on network or USB volumes + Maximize windows with `Ctrl+alt+Cmd+f`…
+
+#### :snake: Another Scripts:
+* tube: Using youtube-dl extract the audio from youtbue videos
+* chromesh and connect.sh: Used for connect to the vpn using Google SDK and watch the sparkui
 
 ## :mortar_board: My Apps instaled
 
