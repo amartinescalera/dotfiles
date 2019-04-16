@@ -101,8 +101,8 @@ This script will modify system preferences. We would recommend you to [take a lo
 * Others: Disable the sound effects on boot + always show scrollbars + disable automatic capitalization + Avoid creating .DS_Store files on network or USB volumes + Maximize windows with `Ctrl+alt+Cmd+f`…
 
 #### :snake: Another Scripts:
-* tube: Using youtube-dl extract the audio from youtbue videos
-* chromesh and connect.sh: Used for connect to the vpn using Google SDK and watch the sparkui
+* [`tube.sh`](tube.sh): Using youtube-dl extract the audio from youtbue videos
+* [`chrome.sh`](chrome.sh) and [`connect.sh`](connect.sh): Used for connect to the vpn using Google SDK and watch the sparkui
 
 ## :mortar_board: My Apps instaled
 
