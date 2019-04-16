@@ -1,7 +1,7 @@
 # 🚀 amartinescalera dotfiles
 
-<img src="http://www.nemedus.org/wp-content/uploads/2018/12/AntonioMartinMinimal.png" align="left" width="544px" height="258px"/>
-<img align="left" width="0" height="258px" hspace="10"/>
+<img src="http://www.nemedus.org/wp-content/uploads/2018/12/AntonioMartinMinimal.png" align="left" width="350px" height="166px"/>
+<img align="left" width="0" height="166px" hspace="10"/>
 
 💨 Speedup your MacOS setup with this fine tuning settings
 
