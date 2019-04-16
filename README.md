@@ -20,8 +20,6 @@
     * [🤖 Shell scripts](#-shell-scripts)
         * [🍎 `install_macos_apps.sh`](#-install_macos_appssh))
         * [🎛️ `adjust_macos_settings.sh`](#-adjust_macos_settingssh))
-            * [🤔 How to discover new domains and settings](#-how-to-discover-new-domains-and-settings)
-            * [🏃‍♂️ How to automate settings changes](#-how-to-automate-settings-changes)
 * [ℹ️ About](#-about)
 * [🤝 Contributing](#-contributing)
     * [☑️ ToDo suggestions](#-todo-suggestions)
