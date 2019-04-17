@@ -25,7 +25,7 @@
 * [ℹ️ About](#-about)
 * [⚖️ License](#-license)
 
-## ☝️ Instructions
+## ☝ Instructions
 
 1. Read the "✍️ Contents" section of this readme in order to grasp which kind of settings and tools could be useful for you
 2. Clone this repository: `git clone https://github.com/amartinescalera/dotfile.git dotfiles`
@@ -34,21 +34,21 @@
     * `.install_macos_apps.sh`
     * `.adjust_macos_settings.sh`
 4. Install manually the following apps:
-   * [ ] FileZilla
-   * [ ] UnRarX
-   * [ ] Garmin Express
-   * [ ] Memory Clean
-   * [ ] VirtualBox
-   * [ ] OnyX
-   * [ ] LibreOffice
-   * [ ] RescueTime
-   * [ ] Keynote
+   * FileZilla
+   * UnRarX
+   * Garmin Express
+   * Memory Clean
+   * VirtualBox
+   * OnyX
+   * LibreOffice
+   * RescueTime
+   * Keynote
  5. Another useful apps: 
    * Adobe Acrobat 8 Professional
    * Parallels Desktop
    * AdobeCS
    * Sketch
-## ✍️ Repository Contents
+## ✍ Repository Contents
 
 You'll find some self-explanatory files in this repo containing comments on what they do, however, here you have a brief explanation of each on of them.
 
@@ -97,7 +97,7 @@ This script will modify system preferences. We would recommend you to [take a lo
 * Safari & WebKit: Allow hitting the Backspace key to go to the previous page + show full URL + disable automatic spelling corrections…
 * Others: Disable the sound effects on boot + always show scrollbars + disable automatic capitalization + Avoid creating .DS_Store files on network or USB volumes + Maximize windows with `Ctrl+alt+Cmd+f`…
 
-#### 🐍Another Scripts
+#### 🐍 Another Scripts
 * [`tube.sh`](tube.sh): Using youtube-dl extract the audio from youtbue videos
 * [`chrome.sh`](chrome.sh) and [`connect.sh`](connect.sh): Used for connect to the vpn using Google SDK and watch the sparkui
 
@@ -113,20 +113,20 @@ This script will modify system preferences. We would recommend you to [take a lo
       * Contacts
       * Dashboard
       * Devs
-          * Atom  Install "Column Select" & "sort-lines"
-          * Dash
-          * draw.io.app
-          * FileZilla
-          * IntelliJ IDEA
-          * iTerm
-          * Postman
-          * PyCharm CE
-          * Robo 3T
-          * Sequel Pro
-          * Slack
-          * Visual Studio code
-          * Visual VM
-          * VNC Viewer
+            * Atom  Install "Column Select" & "sort-lines"
+            * Dash
+            * draw.io.app
+            * FileZilla
+            * IntelliJ IDEA
+            * iTerm
+            * Postman
+            * PyCharm CE
+            * Robo 3T
+            * Sequel Pro
+            * Slack
+            * Visual Studio code
+            * Visual VM
+            * VNC Viewer
       * Dictionary
       * Docker
       * Dropbox
@@ -180,10 +180,10 @@ This script will modify system preferences. We would recommend you to [take a lo
       * VLC
       * Voice Memos
 
-## ℹ️ About
+## ℹ About
 
 This a copy from https://github.com/CodelyTV/dotfiles 
 
-## ⚖️ License
+## ⚖ License
 
 The MIT License (MIT). Please see [License](LICENSE) for more information.
