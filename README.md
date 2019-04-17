@@ -179,7 +179,7 @@ This script will modify system preferences. We would recommend you to [take a lo
       * VLC
       * Voice Memos
 
-## ℹ About
+## ℹ️ About
 
 This a copy from https://github.com/CodelyTV/dotfiles 
 
