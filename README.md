@@ -15,7 +15,6 @@
 * [✍️ Repository Contents](#-repository-contents)
     * [💻 Shell dotfiles](#-shell-dotfiles)
     * [🐙 Git dotfiles](#-git-dotfiles)
-    * [⚡ Custom commands](#-custom-commands)
     * [📱 Other apps dotfiles](#-other-apps-dotfiles-and-settings)
     * [🤖 Shell scripts](#-shell-scripts)
         * [🍎 `install_macos_apps.sh`](#-install_macos_appssh)
@@ -88,7 +87,7 @@ With these 2 command line tools, we'll be able to install and upgrade our apps w
 
 You can [check out the `install_macos_apps.sh` script](install_macos_apps.sh) in order to see the detailed list of the apps it will install, and modify it based on your needs, and [the available packages in Homebrew](https://formulae.brew.sh/formula/) and [Homebrew Cask apps](https://github.com/Homebrew/homebrew-cask/tree/master/Casks).
 
-#### 🎛️ [`adjust_macos_settings.sh`](adjust_macos_settings.sh)
+#### 🎛 [`adjust_macos_settings.sh`](adjust_macos_settings.sh)
 
 This script will modify system preferences. We would recommend you to [take a look at the `adjust_macos_settings.sh` script](adjust_macos_settings.sh) in order to know the actual list of aspects it will modify. Here you have a brief list of them:
 
