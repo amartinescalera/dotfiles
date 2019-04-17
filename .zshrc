@@ -2,6 +2,14 @@
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+## CUSTOM IMPLEMENTATION BY @amartinescalera
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
+export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
+export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
+
+export PATH=$PATH:$SPARK_HOME/bin
+export PATH=$PATH:$SPARK_HOME/sbin
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -38,6 +46,3 @@ export EDITOR='vim'
 
 # Load .profile
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
-
-local ret_status="%(?:%{$fg_bold[green]%}☝️ :%{$fg_bold[red]%}👀 )"
-PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'

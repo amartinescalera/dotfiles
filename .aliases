@@ -1,8 +1,10 @@
 # 📁 Directories
 
-alias cdd='cd ~/dev'
-alias cdw="cdd; cd work"
-alias cdc='cdw; cd codelytv'
+alias cdp='cd ~/Proyects/'
+alias cda="cdp; cd amartinescalera"
+alias cde='cdp; cd enjoySports
+alias cdh='cdp; cd HelpCode
+alias cdw='cdp; cd sbd'
 alias ll='ls -lah'
 alias lla='ls -l'
 alias vbox='VBoxManage'
