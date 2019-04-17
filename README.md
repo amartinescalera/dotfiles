@@ -100,7 +100,7 @@ This script will modify system preferences. We would recommend you to [take a lo
 * [`tube.sh`](tube.sh): Using youtube-dl extract the audio from youtbue videos
 * [`chrome.sh`](chrome.sh) and [`connect.sh`](connect.sh): Used for connect to the vpn using Google SDK and watch the sparkui
 
-## 🎓My Apps instaled
+## 🎓 My Apps instaled
       * Adobe Acrobat Reader DC
       * App Store
       * Automator
