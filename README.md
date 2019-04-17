@@ -21,7 +21,7 @@
         * [🎛️ `adjust_macos_settings.sh`](#-adjust_macos_settingssh)
         * [🐍 `Another Scripts`](#-another-scripts)
 * [🎓 My Apps instaled](#-my-apps-instaled)
-* [ℹ About](#-about)
+* [💁 About](#-about)
 * [⚖️ License](#-license)
 
 ## ☝ Instructions
@@ -179,7 +179,7 @@ This script will modify system preferences. We would recommend you to [take a lo
       * VLC
       * Voice Memos
 
-## ℹ About
+## 💁 About
 
 This a copy from https://github.com/CodelyTV/dotfiles 
 
