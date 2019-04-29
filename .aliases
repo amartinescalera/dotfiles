@@ -1,10 +1,9 @@
-# 📁 Directories
+a# 📁 Directories
 
 alias cdp='cd ~/Proyects/'
-alias cda="cdp; cd amartinescalera"
-alias cde='cdp; cd enjoySports
-alias cdh='cdp; cd HelpCode
-alias cdw='cdp; cd sbd'
+alias cda='cdp; cd amartinescalera'
+alias cde='cdp; cd enjoySports'
+alias cdh='cdp; cd HelpCode'
 alias ll='ls -lah'
 alias lla='ls -l'
 alias vbox='VBoxManage'
