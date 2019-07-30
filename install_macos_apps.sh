@@ -44,6 +44,8 @@ declare -a brew_cask_apps=(
   'unetbootin'
   'skype'
   'docker'
+  'keepassxc'
+  'mono'
 )
 
 for app in "${brew_cask_apps[@]}"; do

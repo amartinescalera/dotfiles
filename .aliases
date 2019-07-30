@@ -1,15 +1,17 @@
 # 📁 Directories
 
-alias cdp='cd ~/Proyects/'
-alias cda="cdp; cd amartinescalera"
-alias cde='cdp; cd enjoySports
-alias cdh='cdp; cd HelpCode
+alias cdp='cd ~/Projects/'
+alias cda='cdp; cd amartinescalera'
+alias cdd='cd ~/Developer'
+alias cde='cdp; cd enjoySports'
+alias cdh='cdp; cd HelpCode'
 alias cdo='cdp; cd optima'
+alias cdw='cd ~/Developer/wildfly-8.1.0.Final/standalone/deployments/'
 alias cdz='cdp; cd private'
 alias ll='ls -lah'
 alias lla='ls -l'
 alias vbox='VBoxManage'
-alias space='tmutil listlocalsnapshots /'
+alias oracle='open -n /Applications/Devs/SQLDeveloper.app'
 
 # 📱 Apps
 
