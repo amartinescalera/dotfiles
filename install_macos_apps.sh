@@ -95,6 +95,3 @@ done
 
 # Set ZSH as the default shell
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-mkdir /Volumes/HankSD/Downloads
-ln -s /Volumes/HankSD/Downloads sdDownloads
