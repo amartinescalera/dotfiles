@@ -7,7 +7,7 @@
 
 :scream_cat: Repository containing all the automations required to setup my MacOS in just a few seconds after a fresh install.
 
-:registered: This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles), for any doubts or more information go to the original copy.
+:registered: This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles), for any doubts or more information go to the original copy, or write me
 
 ## 📜 Table of Contents
 
@@ -28,7 +28,7 @@
 
 1. Read the "✍️ Contents" section of this readme in order to grasp which kind of settings and tools could be useful for you
 2. Clone this repository: `git clone https://github.com/amartinescalera/dotfile.git dotfiles`
-2. Move to the project root directory: `cd codelytv_dotfiles`
+2. Move to the project root directory: `cd dotfiles`
 3. Execute the scripts from the terminal:
     * `.install_macos_apps.sh`
     * `.adjust_macos_settings.sh`
@@ -43,10 +43,7 @@
    * RescueTime
    * Keynote
  5. Another useful apps: 
-   * Adobe Acrobat 8 Professional
    * Parallels Desktop
-   * AdobeCS
-   * Sketch
 ## ✍ Repository Contents
 
 You'll find some self-explanatory files in this repo containing comments on what they do, however, here you have a brief explanation of each on of them.

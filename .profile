@@ -9,3 +9,8 @@ fi
 #if [ -f ~/.functions ]; then
 #  . ~/.functions
 #fi
+
+#Load Sqlplus if you installed sqlplus
+#source /usr/local/share/instantclient/instantclient.sh
+
+# Load keys

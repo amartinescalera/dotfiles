@@ -1,6 +1,6 @@
 [user]
 	name = Antonio Martin
-	email = antoniomeh@gmail.com
+	email = antoniomartinescalera@gmail.com
 
 [core]
 	excludesfile = $HOME/.gitignore_global
@@ -11,3 +11,5 @@
 	default = simple
 [color]
 	ui = auto
+[pager]
+	branch = false

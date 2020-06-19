@@ -44,6 +44,8 @@ declare -a brew_cask_apps=(
   'unetbootin'
   'skype'
   'docker'
+  'keepassxc'
+  'mono'
 )
 
 for app in "${brew_cask_apps[@]}"; do
@@ -93,6 +95,3 @@ done
 
 # Set ZSH as the default shell
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-mkdir /Volumes/HankSD/Downloads
-ln -s /Volumes/HankSD/Downloads sdDownloads
