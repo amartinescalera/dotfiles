@@ -2,8 +2,11 @@
 	name = Antonio Martin
 	email = antoniomartinescalera@gmail.com
 
+[includeIf "gitdir:~/projects/{{company}}/"]
+    path = ~/projects/{{company}}/.gitconfig
+
 [core]
-	excludesfile = $HOME/.gitignore_global
+	excludesfile = .gitignore_global
 	autocrlf = input
 	editor = vim
 [http]
@@ -13,3 +16,6 @@
 	ui = auto
 [pager]
 	branch = false
+	log = false
+[pull]
+	rebase = true

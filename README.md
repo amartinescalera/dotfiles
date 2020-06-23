@@ -1,6 +1,7 @@
 # 🚀 AMARTINESCALERA dotfiles
 
-<img src="http://www.nemedus.org/wp-content/uploads/2018/12/AntonioMartinMinimal.png" align="left" width="350px" height="166px"/>
+
+![alt text](logo.png "Diagram Description")
 <img align="left" width="0" height="166px" hspace="10"/>
 
 💨 Speedup your MacOS setup with this fine tuning settings

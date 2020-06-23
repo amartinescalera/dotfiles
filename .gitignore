@@ -2,7 +2,8 @@
 # IDE settings #
 ################
 .idea/
-
+dotfiles/
+dotfiles_codely/
 # OS generated files #
 ######################
 .DS_Store
@@ -10,3 +11,4 @@
 .Trashes
 Thumbs.db
 *.iml
+/**/***/*private*
