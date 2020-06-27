@@ -15,13 +15,17 @@ fi
 
 COMPUTER_NAME="$1"
 
+export DOTFILES_PATH="$HOME/.dotfiles"
+
 echo "-------------------------------------------------"
 echo "Git is required !!!!"
 echo
 read -rp "🤔  Where do you want to clone the dotfiles? (default ~/.dotfiles): " DOTFILES_PATH
 echo
 
-git clone --depth 1 git@github.com:amartinescalera/dotfiles.git "$DOTFILES_PATH"
+echo "👉  Cloning into: '$DOTFILES_PATH'"
+
+git clone --depth 1 git@github.com:amartinescalera/dotfiles.git
 
 # ----------------------------------
 # User defined function
