@@ -184,3 +184,8 @@ This a copy from https://github.com/CodelyTV/dotfiles
 ## ⚖ License
 
 The MIT License (MIT). Please see [License](LICENSE) for more information.
+
+
+
+bash <(curl -s https://raw.githubusercontent.com/amartinescalera/dotfiles/master/install.sh)
+install.sh
