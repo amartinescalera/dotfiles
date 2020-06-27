@@ -1,6 +1,7 @@
 # 🚀 AMARTINESCALERA dotfiles
 
-<img src="http://www.nemedus.org/wp-content/uploads/2018/12/AntonioMartinMinimal.png" align="left" width="350px" height="166px"/>
+
+![alt text](logo.png "Diagram Description")
 <img align="left" width="0" height="166px" hspace="10"/>
 
 💨 Speedup your MacOS setup with this fine tuning settings
@@ -50,7 +51,7 @@ You'll find some self-explanatory files in this repo containing comments on what
 
 ### 💻 Shell dotfiles
 
-* [`.aliases`](.aliases): Common command aliases in order to save some characters 😬
+* [`.aliases`](aliases_to_be_updated): Common command aliases in order to save some characters 😬
 * [`.bashrc`](.bashrc): Main config for Bash shell (loads common `.profile`)
 * [`.profile`](.profile): Common profile between the different shells in order to have all the functionalities in both of them. This file loads `.aliases`.
 * [`.zshrc`](.zshrc): Main config for ZSH shell (loads common `.profile`)

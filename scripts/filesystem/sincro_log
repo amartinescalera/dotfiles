@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Synchronize remote folder with local
+#?? 1.0.0
+##?
+##? Usage:
+##?  extractlogPoseidon develop 10.154.50.30 /Users/amartin/Downloads/tmp
+
+docs::eval "$@"
+
+# shellcheck disable=SC2054
+POSEIDON_LOG=(
+  '/apps/wildfly-8.1.0.Final/domain/servers/mgc-dev-vmtc-01.dev.local/log'
+  '/apps/wildfly-8.1.0.Final/domain/servers/mgc-dev-vmtm-01.dev.local/log'
+  '/apps/wildfly-8.1.0.Final/domain/servers/mgc-dev-vmts-01.dev.local/log'
+  '/apps/wildfly-8.1.0.Final/domain/servers/mgc-dev-vmtn-01.dev.local/log'
+  '/apps/wildfly-8.1.0.Final/domain/servers/mgc-dev-vmtp-01.dev.local/log')
+
+PO_USERNAME=$1
+HOST=$2
+DESTINATION=$3
+
+i=1
+for logs in "${POSEIDON_LOG[@]}"
+do
+    mkdir -p  "$DESTINATION/$i"
+    rsync -avz "$PO_USERNAME"@"$HOST":"$logs" "$DESTINATION/$i"
+    # rsync -avz --exclude '.idea' --exclude '.git' --exclude '.gitignore' /Users/amartin/projects/EnjoySports/api-enjoysport/code/ ssh antoniomeh.info@ssh.strato.de:/mnt/webs/e1/97/53675597/htdocs/api/staging
+    # scp -r "$PO_USERNAME"@"$HOST":"$logs" "$DESTINATION"
+    ((i=i+1))
+done;
