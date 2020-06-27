@@ -1,13 +1,12 @@
 export PATH=$PATH:$HOME/bin:$DOTFILES_PATH/bin:$DOTLY_PATH/bin
 
-PHP_PATH='/usr/local/opt/php@7.4'
-GLOBAL_COMPOSER_PATH="$HOME/.composer"
-PYTHON_PATH='/usr/local/opt/python'
-RUBY_PATH='/usr/local/opt/ruby'
+#PHP_PATH='/usr/local/opt/php@7.4'
+#GLOBAL_COMPOSER_PATH="$HOME/.composer"
+#PYTHON_PATH='/usr/local/opt/python'
+#RUBY_PATH='/usr/local/opt/ruby'
 
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home'
-export GEM_HOME="$HOME/.gem"
-export GOPATH="$HOME/.go"
+#export GEM_HOME="$HOME/.gem"
+#export GOPATH="$HOME/.go"
 
 export SBT_OPTS='-Xms512M -Xmx1024M -Xss2M -XX:MaxMetaspaceSize=512m -XX:ReservedCodeCacheSize=256M -Dfile.encoding=UTF8'
 export SBT_CREDENTIALS="$HOME/.sbt/.credentials"
@@ -17,39 +16,26 @@ export FZF_DEFAULT_OPTS='
   --reverse
 '
 
-export HOMEBREW_AUTO_UPDATE_SECS=86400
-export HOMEBREW_NO_ANALYTICS=true
-export HOMEBREW_INSTALL_BADGE="(ʘ‿ʘ)"
-export HOMEBREW_BUNDLE_FILE_PATH=${DOTFILES_PATH}/mac/brew/Brewfile
-
-export NAVI_PATH="$DOTFILES_PATH/doc/navi"
+#export HOMEBREW_AUTO_UPDATE_SECS=86400
+#export HOMEBREW_NO_ANALYTICS=true
+#export HOMEBREW_INSTALL_BADGE="(ʘ‿ʘ)"
+#export HOMEBREW_BUNDLE_FILE_PATH=${DOTFILES_PATH}/mac/brew/Brewfile
+#
+#export NAVI_PATH="$DOTFILES_PATH/doc/navi"
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
-paths=(
-  "$HOME/bin"
-  "$DOTFILES_PATH/bin"
-  "$PHP_PATH/bin"
-  "$PHP_PATH/sbin"
-  "$RUBY_PATH/bin"
-  "$JAVA_HOME/bin"
-  "$GOPATH/bin"
-  "$GEM_HOME/bin"
-  "$PYTHON_PATH/libexec/bin"
-  "$GLOBAL_COMPOSER_PATH/vendor/bin"
-  "/bin"
-  "/usr/local/bin" # This contains Brew ZSH. If it's below `/bin` it won't be executed.
-  "/usr/local/opt/make/libexec/gnubin"
-  "/usr/bin"
-  "/usr/local/sbin"
-  "/usr/sbin"
-  "/sbin"
-)
+## CUSTOM IMPLEMENTATION BY @amartinescalera
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
+export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
+export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
 
-PATH=$(
-  IFS=":"
-  echo "${paths[*]}"
-)
+export PATH=$PATH:$SPARK_HOME/bin
+export PATH=$PATH:$SPARK_HOME/sbin
 
-export PATH
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH="$HOME/.oh-my-zsh"

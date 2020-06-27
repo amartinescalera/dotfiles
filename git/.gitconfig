@@ -2,8 +2,8 @@
 	name = Antonio Martin
 	email = antoniomartinescalera@gmail.com
 
-[includeIf "gitdir:~/projects/{{company}}/"]
-    path = ~/projects/{{company}}/.gitconfig
+[includeIf "gitdir:~/Projects/{COMPANY}/"]
+    path = ~/Projects/{COMPANY}/.gitconfig
 
 [core]
 	excludesfile = .gitignore_global

@@ -4,75 +4,86 @@
 # Install brew and brew cask apps                                             #
 ###############################################################################
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'
 
 # Add older versions cask repository because of 1Password subscription based business model change from v6 to v7
 
 brew tap homebrew/cask-versions
 
 declare -a brew_cask_apps=(
-  'java'
-  'visualvm'
-  'google-chrome'
-  'the-unarchiver'
-  'vlc'
-  'dropbox'
-  'google-backup-and-sync'
-  'slack'
-  'postman'
-  'iterm2'
-  'visual-studio-code'
-  'sequel-pro'
-  'appcleaner'
-  'spectacle'
-  'qlstephen'
-  'suspicious-package'
-  'qlvideo'
-  'franz'
   'adobe-acrobat-reader'
-  'atom'
-  'dash'
-  'drawio'
-  'pycharm-ce'
-  'intellij-idea'
-  'robo-3t'
-  'vnc-viewer'
-  'qbittorrent'
-  'grammarly'
-  'gimp'
-  'handbrake'
-  'unetbootin'
-  'skype'
   'docker'
+  'drawio'
+  'dropbox'
+  'franz'
+  'gimp'
+  'google-backup-and-sync'
+  'google-chrome'
+  'grammarly'
+  'handbrake'
+  'iterm2'
+  'java'
+  'jetbrains-toolbox'
   'keepassxc'
   'mono'
+  'mono-mdk'
+  'postman'
+  'qbittorrent'
+  'qlstephen'
+  'qlvideo'
+  'robo-3t'
+  'sequel-pro'
+  'skype'
+  'slack'
+  'spectacle'
+  'suspicious-package'
+  'the-unarchiver'
+  'unetbootin'
+  'visual-studio-code'
+  'visualvm'
+  'vlc'
+  'vnc-viewer'
 )
 
-for app in "${brew_cask_apps[@]}"; do
-  brew cask install "$app"
+for app in '${brew_cask_apps[@]}'; do
+  brew cask install '$app'
 done
 
 declare -a brew_cli_tools=(
-  'htop'
-  'youtube-dl'
-  'ffmpeg'
-  'tree'
-  'bat'
-  'zsh'
-  'zsh-syntax-highlighting'
-  'zsh-autosuggestions'
-  'mas'
-  'tldr'
-  'git'
-  'php'
-  'sbt'
-  'hugo'
-  'autojump'
-  'maven'
+    'autojump'
+    'bat'
+    'python'
+    'ffmpeg'
+    'fzf'
+    'git'
+    'gradle'
+    'htop'
+    'hugo'
+    'irssi'
+    'jq'
+    'kubernetes-cli'
+    'mas'
+    'maven'
+    'minikube'
+    'node'
+    'php'
+    'rename'
+    'sbt'
+    'scala'
+    'sshpass'
+    'telnet'
+    'tldr'
+    'tree'
+    'yarn'
+    'youtube-dl'
+    'zim'
+#    'zsh' we are going to use zim in this case
+#    'zsh-autosuggestions'
+#    'zsh-syntax-highlighting'
 )
 
-for tool in "${brew_cli_tools[@]}"; do
-  brew install "$tool"
+for tool in '${brew_cli_tools[@]}'; do
+  brew install '$tool'
 done
 
 ###############################################################################
@@ -80,13 +91,16 @@ done
 ###############################################################################
 
 declare -a mas_apps=(
-  '1180531112' # DeskApp for YouTube (1.3)
-  '425424353'  # The Unarchiver
-  '408981434'  # iMovie
+    '1180531112' # "DeskApp for YouTube",
+    '409183694' # "Keynote",
+    '1295203466' # "Microsoft Remote Desktop",
+    '540348655' # "Monosnap",
+    '485812721' # "TweetDeck",
+    '1482454543' # "Twitter",
 )
 
-for app in "${mas_apps[@]}"; do
-  mas install "$app"
+for app in '${mas_apps[@]}'; do
+  mas install '$app'
 done
 
 ###############################################################################
@@ -94,4 +108,8 @@ done
 ###############################################################################
 
 # Set ZSH as the default shell
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c '$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'
+
+###############################################################################
+# Moves App                                                    #
+###############################################################################
