@@ -45,8 +45,8 @@ declare -a brew_cask_apps=(
   'vnc-viewer'
 )
 
-for app in '${brew_cask_apps[@]}'; do
-  brew cask install '$app'
+for app in "${brew_cask_apps[@]}"; do
+  brew cask install "$app"
 done
 
 declare -a brew_cli_tools=(
@@ -82,8 +82,8 @@ declare -a brew_cli_tools=(
 #    'zsh-syntax-highlighting'
 )
 
-for tool in '${brew_cli_tools[@]}'; do
-  brew install '$tool'
+for tool in "${brew_cli_tools[@]}"; do
+  brew install "$tool"
 done
 
 ###############################################################################
@@ -99,8 +99,8 @@ declare -a mas_apps=(
     '1482454543' # "Twitter",
 )
 
-for app in '${mas_apps[@]}'; do
-  mas install '$app'
+for app in "${mas_apps[@]}"; do
+  mas install "$app"
 done
 
 ###############################################################################
