@@ -12,10 +12,10 @@
 
 declare -a brew_cask_apps=(
   'adobe-acrobat-reader'
+  'adoptopenjdk'
   'docker'
   'drawio'
   'dropbox'
-  'franz'
   'gimp'
   'google-backup-and-sync'
   'google-chrome'
@@ -70,7 +70,6 @@ declare -a brew_cli_tools=(
     'rename'
     'sbt'
     'scala'
-    'sshpass'
     'telnet'
     'tldr'
     'tree'
