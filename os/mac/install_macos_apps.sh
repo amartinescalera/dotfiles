@@ -4,11 +4,11 @@
 # Install brew and brew cask apps                                             #
 ###############################################################################
 
-/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Add older versions cask repository because of 1Password subscription based business model change from v6 to v7
 
-brew tap homebrew/cask-versions
+#brew tap homebrew/cask-versions
 
 declare -a brew_cask_apps=(
   'adobe-acrobat-reader'
