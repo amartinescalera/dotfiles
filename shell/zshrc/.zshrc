@@ -2,12 +2,13 @@
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+## CUSTOM IMPLEMENTATION BY @amartinescalera
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
 export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
-export DOTFILES_PATH="$HOME"/.dotfiles
 
-export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin:$DOTFILES_PATH/bin:$JAVA_HOME/bin
+export PATH=$PATH:$SPARK_HOME/bin
+export PATH=$PATH:$SPARK_HOME/sbin
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -41,13 +42,13 @@ source $ZSH/oh-my-zsh.sh
 
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
-export SSH_KEY_PATH="$HOME/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
 # Load .profile
-[[ -e ~/.profile ]] && emulate sh -c 'source $HOME/.profile'
+[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search

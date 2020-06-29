@@ -1,4 +1,4 @@
-# Uncomment for debuf with `zprof`
+# Uncomment for debug with `zprof`
 # zmodload zsh/zprof
 
 export DOTFILES_PATH=$HOME/.dotfiles
@@ -10,7 +10,13 @@ setopt HIST_FCNTL_LOCK
 # setopt autopushd
 
 # Start zim
-source "$ZIM_HOME/init.zsh"
+source ${ZIM_HOME}/init.zsh
+
+# Removing the waiting dots from completion (...). Original: ~/.zim/modules/input/init.zsh
+# expand-or-complete-with-redisplay() {
+#   zle expand-or-complete
+#   zle redisplay
+# }
 
 # Async mode for autocompletion
 ZSH_AUTOSUGGEST_USE_ASYNC=true

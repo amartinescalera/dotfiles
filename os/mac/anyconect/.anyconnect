@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectPreferences>
+<DefaultUser>antonio.martin</DefaultUser>
+<DefaultSecondUser></DefaultSecondUser>
+<ClientCertificateThumbprint></ClientCertificateThumbprint>
+<MultipleClientCertificateThumbprints></MultipleClientCertificateThumbprints>
+<ServerCertificateThumbprint></ServerCertificateThumbprint>
+<DefaultHostName></DefaultHostName>
+<DefaultHostAddress></DefaultHostAddress>
+<DefaultGroup>VPN_Developers</DefaultGroup>
+<ProxyHost></ProxyHost>
+<ProxyPort></ProxyPort>
+<SDITokenType>none</SDITokenType>
+<ControllablePreferences>
+<MinimizeOnConnect>true</MinimizeOnConnect>
+<BlockUntrustedServers>false</BlockUntrustedServers></ControllablePreferences>
+</AnyConnectPreferences>

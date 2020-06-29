@@ -39,3 +39,25 @@ export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
 
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
 #export ZSH="$HOME/.oh-my-zsh"
+
+export path=(
+  "$HOME/bin"
+  "$DOTFILES_PATH/bin"
+#  "$PHP_PATH/bin"
+#  "$PHP_PATH/sbin"
+  "$RUBY_PATH/bin"
+  "$JAVA_HOME/bin"
+  "$GOPATH/bin"
+  "$GEM_HOME/bin"
+#  "$GEM_HOME/ruby/2.7.0/bin/bin"
+  "$PYTHON_PATH/libexec/bin"
+#  "$GLOBAL_COMPOSER_PATH/vendor/bin"
+  "/bin"
+  "/usr/local/bin" # This contains all Brew binaries (bash...)
+  "/usr/local/opt/gnu-sed/libexec/gnubin" # Use gnu-sed (mac version is from BSD 2005)
+  "/usr/local/opt/make/libexec/gnubin" # Use gnu-make
+  "/usr/bin"
+#  "/usr/local/sbin"
+  "/usr/sbin"
+  "/sbin"
+)

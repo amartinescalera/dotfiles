@@ -1,0 +1,104 @@
+# 🗳 functions
+
+#añadir jps -lvm jps -lvm | grep lang
+doSql() {
+    # Copyright 2020 amartinescalera
+    #
+    #
+    # 'xxxuser/xxxpassword@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=xxxhostxxx)(PORT=xxxportxxx))(CONNECT_DATA=(SERVICE_NAME=xxxservicenamexxx)))'
+
+    #if [ "$#" -ne 5 ]; then
+    #   echo "[Info] We required [USERNAME] [PASSWORD] [HOST] [PORT] [SERVICE]"
+    #   exit 1
+    #fi
+
+    source /usr/local/share/instantclient/instantclient.sh
+
+    NAME=$1
+    PASSWORD=$2
+    HOST=$3
+    PORT=$4
+    SERVICE=$5
+
+    echo "Connecting $NAME to $HOST:$PORT $SERVICE"
+
+    sqlplus "$NAME/$PASSWORD@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=$HOST)(PORT=$PORT))(CONNECT_DATA=(SERVICE_NAME=$SERVICE)))"
+}
+
+searchWithGrep() {
+    #Search using grep
+    # mv "$1" "$1.bak"
+    # cp "$2" "$1"
+    history | grep $1
+}
+
+gitlog() {
+   git log -n $1 --oneline --graph
+}
+
+searchWithFind() {
+	find . -name '*$1*'
+	# 👓  find . -iname '*.txt' -exec grep -i 'Optima123' {} \;
+}
+
+getVideos() {
+	youtube-dl -f 22  --no-check-certificate --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
+}
+
+getMusic() {
+	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
+}
+
+
+
+# 📁 Directories
+
+
+alias cdp='cd ~/Projects/'
+alias cdd='cd ~/Developer/'
+alias ll='ls -lah'
+alias lla='ls -l'
+alias vbox='VBoxManage'
+alias oracle='open -n /Applications/Devs/SQLDeveloper.app'
+alias myjava='/Library/Java/JavaVirtualMachines/'
+alias k8s='minikube start --memory 2048'
+alias k8stop='minikube stop'
+alias mydocker='eval $(minikube docker-env)'
+alias m='mvn checkstyle:check; mvn clean install'
+alias h='searchWithGrep'
+alias se='searchWithFind'
+alias video='getVideos'
+alias music='getMusic'
+alias reload='source ~/.bashrc'
+alias sql='doSql'
+alias myhelp='cat ~/.aliases'
+alias none='docker rmi $(docker images -f "dangling=true" -q)'
+alias kj='pkill -f java'
+
+# 👨‍🍳 Personal
+
+alias setjava7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home'
+alias deploy='cd ~/Developer/wildfly-8.1.0.Final/standalone/deployments/'
+alias jboss='/Users/amartin/Developer/wildfly-8.1.0.Final/bin/'
+alias antonio='cdp; cd amartinescalera'
+alias helpcode='cdp; cd HelpCode'
+alias optima='cdp; cd optima'
+alias fix='cdp; cd optima; cd  fixedoods'
+alias data='cdp; cd optima; cd data'
+
+# 👨🏼‍💻 Optima
+
+alias seelogs='sudo mount -t nfs 10.154.0.11:/logs /private/logs'
+alias gl='git log --graph --all --decorate'
+
+# 📱 Apps
+
+# Update process based on https://docs.brew.sh/FAQ
+alias upda='brew update; brew outdated; brew upgrade; brew cleanup; mas upgrade'
+
+# list and remove machineSnapshot
+
+alias lstm='tmutil listlocalsnapshots /'
+alias rmtm='tmutil deletelocalsnapshots'
+alias code="/Applications/Visual\ Studio\ Code.app/contents/Resources/app/bin/code"
+alias code="/Applications/Devs/Visual\ Studio\ Code.app/contents/Resources/app/bin/code"

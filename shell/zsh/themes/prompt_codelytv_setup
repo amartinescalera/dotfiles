@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+FIRST_CHARACTER_OK="▶"
+FIRST_CHARACTER_KO="▶"
 DIRTY="✗"
 NONE="✓"
 

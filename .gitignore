@@ -2,8 +2,7 @@
 # IDE settings #
 ################
 .idea/
-dotfiles/
-dotfiles_codely/
+dotfiles_master/
 # OS generated files #
 ######################
 .DS_Store
