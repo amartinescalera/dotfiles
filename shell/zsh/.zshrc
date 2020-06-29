@@ -2,7 +2,7 @@
 # zmodload zsh/zprof
 
 export DOTFILES_PATH=$HOME/.dotfiles
-export ZIM_HOME=${ZDOTDIR:-${HOME}}/.dotfiles/modules/zimfw
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
 # ZSH Ops
 setopt HIST_IGNORE_ALL_DUPS
@@ -16,11 +16,11 @@ source "$ZIM_HOME/init.zsh"
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_HIGHLIGHT_MAXLENGTH=300
 
-source $DOTFILES_PATH/terminal/init.sh
+source $DOTFILES_PATH/shell/init.sh
 
-fpath=("$DOTFILES_PATH/terminal/zsh/themes" "$DOTFILES_PATH/terminal/zsh/completions" $fpath)
+fpath=("$DOTFILES_PATH/shell/zsh/themes" "$DOTFILES_PATH/shell/zsh/completions" $fpath)
 
 autoload -Uz promptinit && promptinit
 prompt codelytv
 
-source $DOTFILES_PATH/terminal/zsh/key-bindings.zsh
+source $DOTFILES_PATH/shell/zsh/key-bindings.zsh

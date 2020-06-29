@@ -17,7 +17,7 @@ prompt_codelytv_precmd() {
 }
 
 prompt_codelytv_setup() {
-  local prompt_codelytv_status='%(?:%F{green}{%F{white}am%F{green}}:%F{red}{%F{white}am%F{red}})'
+  local prompt_codelytv_status='%(?:%F{green}{%F{white}am%F{green}:%F{red}{%F{white}am%F{red})'
 
   autoload -Uz add-zsh-hook && add-zsh-hook precmd prompt_codelytv_precmd
 

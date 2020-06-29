@@ -75,7 +75,6 @@ declare -a brew_cli_tools=(
     'tree'
     'yarn'
     'youtube-dl'
-    'zim'
 #    'zsh' we are going to use zim in this case
 #    'zsh-autosuggestions'
 #    'zsh-syntax-highlighting'
@@ -112,3 +111,4 @@ sh -c '$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ###############################################################################
 # Moves App                                                    #
 ###############################################################################
+mkddir /Applications/Devs

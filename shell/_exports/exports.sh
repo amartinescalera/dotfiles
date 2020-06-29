@@ -1,4 +1,5 @@
-export PATH=$PATH:$HOME/bin:$DOTFILES_PATH/bin:$DOTLY_PATH/bin
+#export PATH=$PATH:$DOTFILES_PATH/bin
+#:$DOTLY_PATH/bin
 
 #PHP_PATH='/usr/local/opt/php@7.4'
 #GLOBAL_COMPOSER_PATH="$HOME/.composer"
@@ -21,21 +22,20 @@ export FZF_DEFAULT_OPTS='
 #export HOMEBREW_INSTALL_BADGE="(ʘ‿ʘ)"
 #export HOMEBREW_BUNDLE_FILE_PATH=${DOTFILES_PATH}/mac/brew/Brewfile
 #
-#export NAVI_PATH="$DOTFILES_PATH/doc/navi"
+export NAVI_PATH="$DOTFILES_PATH/doc/navi"
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
 ## CUSTOM IMPLEMENTATION BY @amartinescalera
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
+export JAVA_HOME=$HOME/developer/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
-export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
+#export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
 
-export PATH=$PATH:$SPARK_HOME/bin
-export PATH=$PATH:$SPARK_HOME/sbin
+#export PATH=$PATH:$SPARK_HOME/bin
+#export PATH=$PATH:$SPARK_HOME/sbin
 
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH="$HOME/.oh-my-zsh"
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export ZSH="$HOME/.oh-my-zsh"
