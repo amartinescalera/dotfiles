@@ -25,6 +25,7 @@ declare -a brew_cask_apps=(
   'java'
   'jetbrains-toolbox'
   'keepassxc'
+  'onyx'
   'mono'
   'mono-mdk'
   'postman'
@@ -37,12 +38,14 @@ declare -a brew_cask_apps=(
   'slack'
   'spectacle'
   'suspicious-package'
+  'telegram'
   'the-unarchiver'
   'unetbootin'
   'visual-studio-code'
   'visualvm'
   'vlc'
   'vnc-viewer'
+  'Whatsapp'
 )
 
 for app in "${brew_cask_apps[@]}"; do

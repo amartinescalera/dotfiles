@@ -6,7 +6,7 @@
     path = ~/Projects/{COMPANY}/.gitconfig
 
 [core]
-	excludesfile = .gitignore_global
+	excludesfile = /Users/amartin/.gitignore_global
 	autocrlf = input
 	editor = vim
 [http]
@@ -19,3 +19,11 @@
 	log = false
 [pull]
 	rebase = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Devs/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/amartin/.stCommitMsg

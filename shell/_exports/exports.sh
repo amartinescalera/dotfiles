@@ -29,7 +29,7 @@ export LC_ALL="en_US.UTF-8"
 
 ## CUSTOM IMPLEMENTATION BY @amartinescalera
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
-export JAVA_HOME=$HOME/developer/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
 export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
 #export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
 
@@ -45,12 +45,12 @@ export path=(
   "$DOTFILES_PATH/bin"
 #  "$PHP_PATH/bin"
 #  "$PHP_PATH/sbin"
-  "$RUBY_PATH/bin"
+#  "$RUBY_PATH/bin"
   "$JAVA_HOME/bin"
-  "$GOPATH/bin"
-  "$GEM_HOME/bin"
+#  "$GOPATH/bin"
+#  "$GEM_HOME/bin"
 #  "$GEM_HOME/ruby/2.7.0/bin/bin"
-  "$PYTHON_PATH/libexec/bin"
+#  "$PYTHON_PATH/libexec/bin"
 #  "$GLOBAL_COMPOSER_PATH/vendor/bin"
   "/bin"
   "/usr/local/bin" # This contains all Brew binaries (bash...)

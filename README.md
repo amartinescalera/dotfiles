@@ -110,32 +110,31 @@ This script will modify system preferences. We would recommend you to [take a lo
       * Contacts
       * Dashboard
       * Devs
-            * Atom  Install "Column Select" & "sort-lines"
             * Dash
             * draw.io.app
             * FileZilla
             * IntelliJ IDEA
             * iTerm
             * Postman
-            * PyCharm CE
             * Robo 3T
             * Sequel Pro
             * Slack
             * Visual Studio code
             * Visual VM
-            * VNC Viewer
       * Dictionary
       * Docker
       * Dropbox
       * FaceTime
+      * Find My
       * Font Book
-      * Franz
-      * Garmin Express
+      * GarageBand
       * Google Chrome
       * Home
       * Image Capture
       * iMovie
       * iTunes
+      * JetBrains Toolbox.app
+      * KeePassXC
       * Keynote
       * Launchpad
       * LibreOffice
@@ -144,10 +143,17 @@ This script will modify system preferences. We would recommend you to [take a lo
       * Memory Clean 3
       * Messages
       * Mission Control
+      * Music
       * Notes
+      * Numbers
       * OnyX
+      * Pages
+      * Parallels Desktop.app
+      * Parallels Toolbox.app
+      * Photo Booth
       * Photo Booth
       * Photos
+      * Podcasts
       * Preview
       * QuickTime Player
       * Reminders
@@ -161,9 +167,9 @@ This script will modify system preferences. We would recommend you to [take a lo
       * System Preferences
       * TextEdit
       * Time Machine
+      * TV 
       * Utilities
       * Various
-            * AppCleaner
             * DeskApp for YouTube
             * GIMP-2.10
             * Grammarly
@@ -172,9 +178,7 @@ This script will modify system preferences. We would recommend you to [take a lo
             * Spectacle
             * The Unarchiver
             * unetbootin
-            * UnRarX
-      * VirtualBox
-      * VLC
+      * VNC Viewer
       * Voice Memos
 
 ## 💁 About

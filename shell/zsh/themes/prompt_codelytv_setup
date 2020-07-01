@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-FIRST_CHARACTER_OK="▶"
-FIRST_CHARACTER_KO="▶"
 DIRTY="✗"
 NONE="✓"
 
@@ -11,7 +9,7 @@ prompt_codelytv_pwd() {
 }
 
 prompt_codelytv_git() {
-  [[ -n ${git_info} ]] && print -n "%F{white} on${(e)git_info[prompt]}"
+  [[ -n ${git_info} ]] && print -n "%F{white}(${(e)git_info[prompt]})"
 }
 
 prompt_codelytv_precmd() {
@@ -27,9 +25,9 @@ prompt_codelytv_setup() {
 
   zstyle ':zim:git-info:branch' format '%F{green}%b'
   zstyle ':zim:git-info:commit' format '%c'
-  zstyle ':zim:git-info:clean' format '%F{white}$NONE'
+  zstyle ':zim:git-info:clean' format '%F{white}'
   zstyle ':zim:git-info:dirty' format '%F{yellow}$DIRTY'
-  zstyle ':zim:git-info:keys' format 'prompt' ' %F{cyan}%b%c %C%D'
+  zstyle ':zim:git-info:keys' format 'prompt' '%F{cyan}%b%c %C%D'
 
   PS1="${prompt_codelytv_status} \$(prompt_codelytv_pwd)\$(prompt_codelytv_git)%f "
   RPS1=''

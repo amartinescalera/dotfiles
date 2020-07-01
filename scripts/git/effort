@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
-
 source "$DOTFILES_PATH/scripts/core/_main.sh"
 
 ##? Prints repository past effort
@@ -9,8 +7,7 @@ source "$DOTFILES_PATH/scripts/core/_main.sh"
 #?? 1.0.0
 ##?
 ##? Usage:
-##?    effort [--above <value>] [<path>...] [-- [<log options>...]]
-
+##?   effort [--above <value>] [<path>...] [-- [<log options>...]]
 docs::eval "$@"
 
 git_extra_mktemp() {
