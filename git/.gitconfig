@@ -1,9 +1,10 @@
 [user]
 	name = Antonio Martin
-	email = antoniomartinescalera@gmail.com
+	#email = antoniomartinescalera@gmail.com
+	email = antonio.martin@optimaonline.es
 
-[includeIf "gitdir:~/Projects/{COMPANY}/"]
-    path = ~/Projects/{COMPANY}/.gitconfig
+[includeIf "gitdir:$HOME/projects/optima/"]
+    path = $HOME/projects/optima/.gitconfig
 
 [core]
 	excludesfile = /Users/amartin/.gitignore_global

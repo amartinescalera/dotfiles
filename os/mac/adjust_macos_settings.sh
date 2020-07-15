@@ -261,7 +261,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -int 1
 ###############################################################################
 
 defaults write com.apple.finder DisableAllAnimations -bool true
-defaults write -g AppleShowAllExtensions -bool true
+defaults write -g AppleShowAllExtensions -bool false
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 defaults write com.apple.finder NewWindowTarget -string "PfDe"

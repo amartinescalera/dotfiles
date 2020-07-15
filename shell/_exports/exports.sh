@@ -17,6 +17,9 @@ export FZF_DEFAULT_OPTS='
   --reverse
 '
 
+export DOTFILES_PATH=$HOME/.dotfiles
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+
 #export HOMEBREW_AUTO_UPDATE_SECS=86400
 #export HOMEBREW_NO_ANALYTICS=true
 #export HOMEBREW_INSTALL_BADGE="(ʘ‿ʘ)"
@@ -42,6 +45,7 @@ export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
 
 export path=(
   "$HOME/bin"
+  /opt/oracle/instantclient_19_3
   "$DOTFILES_PATH/bin"
 #  "$PHP_PATH/bin"
 #  "$PHP_PATH/sbin"

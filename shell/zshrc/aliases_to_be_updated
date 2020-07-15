@@ -23,6 +23,7 @@ doSql() {
     echo "Connecting $NAME to $HOST:$PORT $SERVICE"
 
     sqlplus "$NAME/$PASSWORD@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=$HOST)(PORT=$PORT))(CONNECT_DATA=(SERVICE_NAME=$SERVICE)))"
+    #sqlplus "amartin/amartin@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=oc-uat-dbc-01.dev.local)(PORT=1522))(CONNECT_DATA=(SERVICE_NAME=MGCDVHQ)))"
 }
 
 searchWithGrep() {
@@ -85,6 +86,7 @@ alias helpcode='cdp; cd HelpCode'
 alias optima='cdp; cd optima'
 alias fix='cdp; cd optima; cd  fixedoods'
 alias data='cdp; cd optima; cd data'
+# for i in $(seq 1 10); do time zsh -i -c exit; done
 
 # 👨🏼‍💻 Optima
 

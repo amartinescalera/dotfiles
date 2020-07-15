@@ -24,10 +24,12 @@ alias se='searchWithFind'
 alias reload='source "$HOME"/.zshrc'
 alias sql='doSql'
 alias none='docker rmi $(docker images -f "dangling=true" -q)'
-alias kj='pkill -f java'
-#alias video='getVideos'
+alias kj="kill -9 $(ps aux | grep java | grep -v 'oracle' | grep -v grep |  awk '{print $2}')"
+#alias video='getVideos'set
 #alias music='getMusic'
-alias setjava7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home'
+alias setjava7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home; export PATH=$JAVA_HOME/bin:$PATH'
+alias setjava11='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home; export PATH=$JAVA_HOME/bin:$PATH'
+alias setjava14='export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home; export PATH=$JAVA_HOME/bin:$PATH'
 
 alias jboss='/Users/amartin/Developer/wildfly-8.1.0.Final/bin/'
 alias antonio='cdp; cd amartinescalera'
