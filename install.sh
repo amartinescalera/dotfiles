@@ -36,9 +36,9 @@ pause(){
 
 install_for_mac(){
   echo "installing app"
-  #sh "$DOTFILES_PATH/os/mac/install_macos_apps.sh $COMPUTER_NAME"
+  sh "$DOTFILES_PATH/os/mac/install_macos_apps.sh $COMPUTER_NAME"
   echo "configuring app"
-  #sh "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh"
+  sh "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh"
   exit
 }
 
@@ -49,7 +49,8 @@ install_for_linux(){
 
 configure_terminal(){
  echo "this script is in progress"
- pause
+ sh "$DOTFILES_PATH/os/install_bash.sh"
+ exit
 }
 
 # function to display menus

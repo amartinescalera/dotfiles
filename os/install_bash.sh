@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 #Configure Spectacle for using my own configuration
-# mv "$HOME"/Library/ApplicationSupport/Spectacle/Shortcuts.json "$HOME"/Library/ApplicationSupport/Spectacle/Shortcuts.json.bk
 ln -s "$HOME"/.dotfiles/os/mac/spectacle/Shortcuts.json "$HOME"/Library/ApplicationSupport/Spectacle/Shortcuts.json
-
-#Configure anyconnect for using my own configuration
-#ln -s "$HOME"/.dotfiles/os/mac/anyconect/.anyconnect "$HOME"/.anyconnect
-#ln -s "$HOME"/.dotfiles/os/mac/anyconect/.anyconnect_ise "$HOME"/.anyconnect_ise
 
 # Configure Git for using my properties
 ln -s "$HOME"/.dotfiles/git/.gitconfig "$HOME"/.gitconfig
