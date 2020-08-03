@@ -1,6 +1,6 @@
 [user]
 	name = Antonio Martin
-	#email = antoniomartinescalera@gmail.com
+	# email = antoniomartinescalera@gmail.com
 	email = antonio.martin@optimaonline.es
 
 [includeIf "gitdir:$HOME/projects/optima/"]
