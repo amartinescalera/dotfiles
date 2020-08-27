@@ -60,7 +60,6 @@ alias cdd='cd ~/Developer/'
 alias ll='ls -lah'
 alias lla='ls -l'
 alias vbox='VBoxManage'
-alias oracle='open -n /Applications/Devs/SQLDeveloper.app'
 alias myjava='/Library/Java/JavaVirtualMachines/'
 alias k8s='minikube start --memory 2048'
 alias k8stop='minikube stop'
@@ -91,7 +90,6 @@ alias data='cdp; cd optima; cd data'
 # 👨🏼‍💻 Optima
 
 alias seelogs='sudo mount -t nfs 10.154.0.11:/logs /private/logs'
-alias gl='git log --graph --all --decorate'
 
 # 📱 Apps
 

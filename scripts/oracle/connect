@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? connect to oracle Copyright 2020 amartinescalera
+#?? 1.0.0
+#?? 'xxxuser/xxxpassword@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=xxxhostxxx)(PORT=xxxportxxx))(CONNECT_DATA=(SERVICE_NAME=xxxservicenamexxx)))'
+#?? NAME=$1
+#?? PASSWORD=$2
+#?? HOST=$3
+#?? PORT=$4
+#?? SERVICE=$5
+##?
+##? Usage:
+##?     connect <name> <password> <host> <port> <servcie>
+docs::eval "$@"
+
+echo "Connecting $1 to $3:$4 $5"
+
+sqlplus "$1/$2@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=$3)(PORT=$4))(CONNECT_DATA=(SERVICE_NAME=$5)))"
+
+echo "😬 Dooone!"

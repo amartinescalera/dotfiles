@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? copy code for paste in a document
+#?? 1.0.0
+##?
+##? Usage:
+##?     copy <filename>
+docs::eval "$@"
+
+highlight -O rtf $1 | pbcopy
+
+echo "😬 Dooone!"
+

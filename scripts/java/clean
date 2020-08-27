@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? clean<<<<<<<<<<<<<<<<<<
+#?? 1.0.0
+##?
+##? Usage:
+##?   clean
+docs::eval "$@"
+
+ps aux | grep java | grep -v 'oracle' | grep -v grep |  awk '{print $2}' | xargs kill -9
+
+echo "😬 Dooone!"

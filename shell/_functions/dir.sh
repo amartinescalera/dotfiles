@@ -2,17 +2,13 @@ function cdd() {
   cd "$(ls -d -- */ | fzf)" || echo "Invalid directory"
 }
 
-function cddtuyo() {
-  cd "$(ls -d -- */ | fzf)" || echo "Invalid directory"
-}
-
-function j() {
-  fname=$(declare -f -F _z)
-
-  [ -n "$fname" ] || source "$DOTFILES_PATH/modules/z/z.sh"
-
-  _z "$1"
-}
+#function j() {
+#  fname=$(declare -f -F _z)
+#
+#  [ -n "$fname" ] || source "$DOTFILES_PATH/modules/z/z.sh"
+#
+#  _z "$1"
+#}
 
 function recent_dirs() {
   # This script depends on pushd. It works better with autopush enabled in ZSH
@@ -42,7 +38,6 @@ searchWithFind() {
 }
 
 video() {
-  cat "hola"
 	youtube-dl -f 22  --no-check-certificate --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
 }
 

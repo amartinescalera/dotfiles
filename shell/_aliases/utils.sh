@@ -5,6 +5,7 @@ alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
+alias ora.='open -n /Applications/Devs/SQLDeveloper.app'
 
 # Mac
 alias out="dot package outdated"
@@ -17,11 +18,6 @@ alias bsl="brew services list"
 alias c='pbcopy'
 alias dc='dot docker connect'
 alias ping='prettyping --nolegend'
-
-alias k='kill -9'
-alias t="dot filesystem navigate_and_preview_flatten_files"
-alias i.='(idea $PWD &>/dev/null &)'
-alias o.='open .'
 # 📱 Apps
 
 # Update process based on https://docs.brew.sh/FAQ
@@ -31,3 +27,5 @@ alias upda='brew update; brew outdated; brew upgrade; brew cleanup; mas upgrade'
 
 alias lstm='tmutil listlocalsnapshots /'
 alias rmtm='tmutil deletelocalsnapshots'
+alias seelogs='sudo mount -t nfs 10.154.0.11:/logs /private/logs'
+
