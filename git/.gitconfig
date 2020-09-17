@@ -1,7 +1,7 @@
 [user]
 	name = Antonio Martin
 	# email = antoniomartinescalera@gmail.com
-	email = antonio.martin@optimaonline.es
+	email = a.martin@wata.es
 
 [includeIf "gitdir:$HOME/projects/optima/"]
     path = $HOME/projects/optima/.gitconfig
