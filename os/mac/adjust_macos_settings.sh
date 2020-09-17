@@ -384,6 +384,11 @@ defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen -bool true
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+###############################################################################
+# 👨🏼‍💻 Notification Time
+###############################################################################
+defaults write com.apple.notificationcenterui bannerTime -int 60
+
 
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 # Disable Wake for Wi-Fi network / Wake on Demand (more info: https://apple.stackexchange.com/questions/73764/what-is-the-wake-for-wifi-network-access-setting-in-energy-preferences)
