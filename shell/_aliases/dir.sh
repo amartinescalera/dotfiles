@@ -26,6 +26,7 @@ alias none='docker rmi $(docker images -f "dangling=true" -q)'
 #alias video='getVideos'set
 #alias music='getMusic'
 alias setjava11='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home; export PATH=$JAVA_HOME/bin:$PATH'
+alias setjava8= 'export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home; export PATH=$JAVA_HOME/bin:$PATH'
 alias setjava14='export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-14.0.2.jdk/Contents/Home; export PATH=$JAVA_HOME/bin:$PATH'
 
 alias antonio='cdp; cd amartinescalera'

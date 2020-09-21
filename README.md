@@ -193,3 +193,8 @@ The MIT License (MIT). Please see [License](LICENSE) for more information.
 
 bash <(curl -s https://raw.githubusercontent.com/amartinescalera/dotfiles/master/install.sh)
 install.sh
+
+zimfw uninstall & zimfw install
+dot shell zsh reload_completions
+autoload -U compaudit && autoload -Uz compinit && compinit
+compinit

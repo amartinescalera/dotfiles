@@ -31,10 +31,9 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
 ## CUSTOM IMPLEMENTATION BY @amartinescalera
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
 export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
-#export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
+export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
 
 #export PATH=$PATH:$SPARK_HOME/bin
 #export PATH=$PATH:$SPARK_HOME/sbin
