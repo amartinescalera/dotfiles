@@ -42,11 +42,11 @@ searchWithFind() {
 }
 
 getVideos() {
-	youtube-dl -f 22  --no-check-certificate --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
+	youtube-dl -f 22  --no-check-certificate --output '$HOME/Downloads/%(title)s.%(ext)s' $1
 }
 
 getMusic() {
-	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
+	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output '$HOME/Downloads/%(title)s.%(ext)s' $1
 }
 
 
@@ -77,8 +77,6 @@ alias kj='pkill -f java'
 # 👨‍🍳 Personal
 
 alias setjava7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home'
-alias deploy='cd ~/Developer/wildfly-8.1.0.Final/standalone/deployments/'
-alias jboss='/Users/amartin/Developer/wildfly-8.1.0.Final/bin/'
 alias antonio='cdp; cd amartinescalera'
 alias helpcode='cdp; cd HelpCode'
 alias optima='cdp; cd optima'

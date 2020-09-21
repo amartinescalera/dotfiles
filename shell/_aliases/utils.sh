@@ -27,5 +27,4 @@ alias upda='brew update; brew outdated; brew upgrade; brew cleanup; mas upgrade'
 
 alias lstm='tmutil listlocalsnapshots /'
 alias rmtm='tmutil deletelocalsnapshots'
-alias seelogs='sudo mount -t nfs 10.154.0.11:/logs /private/logs'
 

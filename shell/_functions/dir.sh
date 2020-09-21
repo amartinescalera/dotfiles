@@ -38,9 +38,9 @@ searchWithFind() {
 }
 
 video() {
-	youtube-dl -f 22  --no-check-certificate --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
+	youtube-dl -f 22  --no-check-certificate --output '$HOME/Downloads/%(title)s.%(ext)s' $1
 }
 
 music() {
-	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
+	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output '$HOME/Downloads/%(title)s.%(ext)s' $1
 }

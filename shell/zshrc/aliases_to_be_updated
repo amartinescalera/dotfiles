@@ -42,15 +42,6 @@ searchWithFind() {
 	# 👓  find . -iname '*.txt' -exec grep -i 'Optima123' {} \;
 }
 
-getVideos() {
-	youtube-dl -f 22  --no-check-certificate --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
-}
-
-getMusic() {
-	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output '/Users/amartin/Downloads/%(title)s.%(ext)s' $1
-}
-
-
 
 # 📁 Directories
 
@@ -79,17 +70,11 @@ alias kj='pkill -f java'
 
 alias setjava7='export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home'
 alias deploy='cd ~/Developer/wildfly-8.1.0.Final/standalone/deployments/'
-alias jboss='/Users/amartin/Developer/wildfly-8.1.0.Final/bin/'
-alias antonio='cdp; cd amartinescalera'
 alias helpcode='cdp; cd HelpCode'
 alias optima='cdp; cd optima'
 alias fix='cdp; cd optima; cd  fixedoods'
 alias data='cdp; cd optima; cd data'
 # for i in $(seq 1 10); do time zsh -i -c exit; done
-
-# 👨🏼‍💻 Optima
-
-alias seelogs='sudo mount -t nfs 10.154.0.11:/logs /private/logs'
 
 # 📱 Apps
 
