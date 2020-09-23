@@ -4,11 +4,11 @@
 ![alt text](logo.png "Diagram Description")
 <img align="left" width="0" height="166px" hspace="10"/>
 
-💨 Speedup your MacOS setup with this fine tuning settings
+💨 Speedup your MacOS setup with this fine-tuning settings
 
 :scream_cat: Repository containing all the automations required to setup my MacOS in just a few seconds after a fresh install.
 
-:registered: This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles), for any doubts or more information go to the original copy, or write me
+:registered: This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles).
 
 ## 📜 Table of Contents
 
@@ -51,7 +51,7 @@ You'll find some self-explanatory files in this repo containing comments on what
 
 ### 💻 Shell dotfiles
 
-* [`.aliases`](shell/zshrc/aliases_to_be_updated): Common command aliases in order to save some characters 😬
+* [`.aliases`](shell/zshrc_old/aliases_to_be_updated): Common command aliases in order to save some characters 😬
 * [`.bashrc`](.bashrc): Main config for Bash shell (loads common `.profile`)
 * [`.profile`](.profile): Common profile between the different shells in order to have all the functionalities in both of them. This file loads `.aliases`.
 * [`.zshrc`](.zshrc): Main config for ZSH shell (loads common `.profile`)
@@ -198,3 +198,21 @@ zimfw uninstall & zimfw install
 dot shell zsh reload_completions
 autoload -U compaudit && autoload -Uz compinit && compinit
 compinit
+
+=======
+Instalar brew Mac
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+
+Instalar git mac
+Git —version
+Instalar ssh mac
+sudo systemsetup -getremotelogin
+
+https://docs.github.com/es/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+LaMamaDelTopoA1B2C3D4
+Isntall zim 
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+
+create ssh key

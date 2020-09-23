@@ -57,7 +57,7 @@ configure_terminal(){
 show_menus() {
  clear
  echo "#############################################################"
- echo "# {am Welcome to the amartinescalera dotfilesinstaller      #"
+ echo "# {am Welcome to the amartinescalera dot files installer    #"
  echo "# Install this configuration for the machine $COMPUTER_NAME #"
  echo "#############################################################"
  echo "~~~~~~~~~~~~~~~~~~~~~"
