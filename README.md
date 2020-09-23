@@ -191,15 +191,6 @@ The MIT License (MIT). Please see [License](LICENSE) for more information.
 
 
 
-bash <(curl -s https://raw.githubusercontent.com/amartinescalera/dotfiles/master/install.sh)
-install.sh
-
-zimfw uninstall & zimfw install
-dot shell zsh reload_completions
-autoload -U compaudit && autoload -Uz compinit && compinit
-compinit
-
-=======
 Instalar brew Mac
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -211,8 +202,18 @@ sudo systemsetup -getremotelogin
 
 https://docs.github.com/es/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
-LaMamaDelTopoA1B2C3D4
-Isntall zim 
+
+Install zim:
+
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
 create ssh key
+
+bash <(curl -s https://raw.githubusercontent.com/amartinescalera/dotfiles/master/install.sh)
+install.sh
+
+zimfw uninstall & zimfw install
+dot shell zsh reload_completions
+autoload -U compaudit && autoload -Uz compinit && compinit
+compinit
