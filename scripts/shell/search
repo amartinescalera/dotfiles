@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Search tns inside a folder
+#?? 1.0.0
+#?? folder
+#?? text
+#?? folder
+##?
+##? Usage:
+##?     search <folder> <text>
+docs::eval "$@"
+
+find $1 -name "*.*" | xargs grep "$2"
+
+echo "😬 Dooone!"
