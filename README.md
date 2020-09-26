@@ -2,13 +2,13 @@
 
 
 ![alt text](logo.png "Diagram Description")
-<img align="left" width="0" height="166px" hspace="10"/>
+<img align="left" width="0" height="250px" hspace="10"/>
 
-💨 Speedup your MacOS setup with this fine-tuning settings
+💨 Speedup your MacOS setup with this fine-tuning settings.
 
-:scream_cat: Repository containing all the automations required to setup my MacOS in just a few seconds after a fresh install.
+🙀 Repository containing all the automations required to setup my MacOS in just a few seconds after a fresh install.
 
-:registered: This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles).
+® This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles).
 
 ## 📜 Table of Contents
 
@@ -27,24 +27,49 @@
 
 ## ☝ Instructions
 
-1. Read the "✍️ Contents" section of this readme in order to grasp which kind of settings and tools could be useful for you
-2. Clone this repository: `git clone https://github.com/amartinescalera/dotfile.git dotfiles`
-2. Move to the project root directory: `cd dotfiles`
-3. Execute the scripts from the terminal:
+1. Install Brew in the mac with fhe following command (Tested Sept 2020)
+```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+2. Install Git in your mac
+```
+    git —version
+```
+
+3. Generate ssh for Mac / Linux following the command:
+
+   https://docs.github.com/es/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+4. Install zim
+```
+    curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+```
+
+5. Clone this repository: 
+```
+    git clone https://github.com/amartinescalera/dotfile.git ~/.dotfiles
+```
+
+. Move to the project root directory: 
+```
+    cd ~/.dotfiles
+```
+. Execute the scripts from the terminal:
     * `.install_macos_apps.sh`
     * `.adjust_macos_settings.sh`
-4. Install manually the following apps:
-   * FileZilla
-   * UnRarX
-   * Garmin Express
-   * Memory Clean
-   * VirtualBox
-   * OnyX
-   * LibreOffice
-   * RescueTime
-   * Keynote
- 5. Another useful apps: 
-   * Parallels Desktop
+    * `.prepareApplications.sh`
+. Configure
+```
+    zimfw uninstall & zimfw install in dot files
+
+    dot shell zsh reload_completions
+```
+Finally
+```
+    compinit
+```
+
 ## ✍ Repository Contents
 
 You'll find some self-explanatory files in this repo containing comments on what they do, however, here you have a brief explanation of each on of them.
@@ -61,29 +86,7 @@ You'll find some self-explanatory files in this repo containing comments on what
 * [`.gitconfig`](.gitconfig): Different settings for the Git CSV system such as including the following file
 * [`.gitignore_global`](.gitignore_global): Ignore rules to apply to every single repository (usefull to do not mess up the project `.gitignore` file with particularities of your development environment such as the `.DS_Store` files or your IDE settings)
 
-### 📱 Other apps dotfiles and settings
-
-Copy and paste the settings you want, create the symbolic links as described in each case, or follow the instructions to edit them:
-
-* [Visual Studio Code](.vscode_settings.json):
-    * Symlink: `$ ln -s .vscode_settings.json ~/Library/Application\ Support/Code/User/settings.json`
-* JetBrains family IDEs (IntelliJ IDEA, PhpStorm, PyCharm, etc.):
-    * [Custom VM Options](IntelliJ IDEA.app.vmoptions)
-        1. Open the IDE
-        2. Go to `Help -> Edit Custom VM Options…` menu option
-        3. Paste the desired JVM properties modifying them based on your environment resources
-
 ### 🤖 Shell scripts
-
-#### 🍎 [`install_macos_apps.sh`](install_macos_apps.sh)
-
-This script will install [Homebrew](https://brew.sh/). It's a package manager for MacOS, used to install some tools like `htop`, `ffmpeg`, `git`, `php`… you get the idea, Command Line Tools, programming languages, and so on.
-
-Homebrew also includes [Homebrew Cask](http://caskroom.io/). It's a package manager useful to install fully functional OS X applications such as `google-chrome`, `spotify`, `slack`…
-
-With these 2 command line tools, we'll be able to install and upgrade our apps without having to leave the terminal. This allow us to automate the whole setup process while starting clean on a new mac, and also to do not have to open all the different apps we've installed in order to update them.
-
-You can [check out the `install_macos_apps.sh` script](install_macos_apps.sh) in order to see the detailed list of the apps it will install, and modify it based on your needs, and [the available packages in Homebrew](https://formulae.brew.sh/formula/) and [Homebrew Cask apps](https://github.com/Homebrew/homebrew-cask/tree/master/Casks).
 
 #### 🎛 [`adjust_macos_settings.sh`](adjust_macos_settings.sh)
 
@@ -94,11 +97,8 @@ This script will modify system preferences. We would recommend you to [take a lo
 * Safari & WebKit: Allow hitting the Backspace key to go to the previous page + show full URL + disable automatic spelling corrections…
 * Others: Disable the sound effects on boot + always show scrollbars + disable automatic capitalization + Avoid creating .DS_Store files on network or USB volumes + Maximize windows with `Ctrl+alt+Cmd+f`…
 
-#### 🐍 Another Scripts
-* [`tube.sh`](tube.sh): Using youtube-dl extract the audio from youtbue videos
-* [`chrome.sh`](chrome.sh) and [`connect.sh`](connect.sh): Used for connect to the vpn using Google SDK and watch the sparkui
 
-## 🎓 My Apps instaled
+## 🎓 My Apps installed
       * Adobe Acrobat Reader DC
       * App Store
       * Automator
@@ -107,22 +107,24 @@ This script will modify system preferences. We would recommend you to [take a lo
       * Calculator
       * Calendar
       * Chess
+      * Comunication
+            * TweetDeck
+            * Twitter
+            * Whatsapp
       * Contacts
       * Dashboard
       * Devs
             * Dash
-            * draw.io.app
             * FileZilla
-            * IntelliJ IDEA
+            * Glogg
             * iTerm
+            * Meld
+            * Monosnap
             * Postman
-            * Robo 3T
-            * Sequel Pro
-            * Slack
             * Visual Studio code
-            * Visual VM
       * Dictionary
       * Docker
+      * draw.io.app
       * Dropbox
       * FaceTime
       * Find My
@@ -158,13 +160,16 @@ This script will modify system preferences. We would recommend you to [take a lo
       * QuickTime Player
       * Reminders
       * RescueTime
+      * Robo 3T
       * Safari
       * Siri
       * Skype
+      * Slack
       * Stickies
       * Stocks
       * Suspicious Package
       * System Preferences
+      * Telegram
       * TextEdit
       * Time Machine
       * TV 
@@ -179,6 +184,7 @@ This script will modify system preferences. We would recommend you to [take a lo
             * The Unarchiver
             * unetbootin
       * VNC Viewer
+      * Visual VM      
       * Voice Memos
 
 ## 💁 About
@@ -188,32 +194,3 @@ This a copy from https://github.com/CodelyTV/dotfiles
 ## ⚖ License
 
 The MIT License (MIT). Please see [License](LICENSE) for more information.
-
-
-
-Instalar brew Mac
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-
-Instalar git mac
-Git —version
-Instalar ssh mac
-sudo systemsetup -getremotelogin
-
-https://docs.github.com/es/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-
-
-Install zim:
-
-curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
-curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
-
-create ssh key
-
-bash <(curl -s https://raw.githubusercontent.com/amartinescalera/dotfiles/master/install.sh)
-install.sh
-
-zimfw uninstall & zimfw install
-dot shell zsh reload_completions
-autoload -U compaudit && autoload -Uz compinit && compinit
-compinit

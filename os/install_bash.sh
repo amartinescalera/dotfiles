@@ -18,3 +18,4 @@ ln -s "$HOME"/.dotfiles/shell/zsh/.zshenv "$HOME"/.zshenv
 ln -s "$HOME"/.dotfiles/shell/zsh/.zshrc "$HOME"/.zshrc
 
 rm .*.zwc
+touch .hushlogin

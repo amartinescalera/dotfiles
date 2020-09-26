@@ -5,7 +5,7 @@ echo ---------------------------------------------------------------------------
 echo   "Install JAVA (Download manually)"
 echo ------------------------------------------------------------------------------------------------------------------
 echo
-read -rp "Press Enter when all java jdks have been installed (java 1.8_152 and java 1.7 are required)"
+read -rp "Press Enter when all java jdks have been installed (java 1.8_152 and java 11 are required)"
 echo
 
 echo ------------------------------------------------------------------------------------------------------------------
@@ -71,34 +71,29 @@ echo
 read -rp "Press Enter when Parallels has been installed"
 echo
 
-#mkdir /Applications/Devs
-#mv /Applications/Dash.app/ /Applications/Devs/
-#mv /Applications//draw.io.app/ /Applications/Devs/
-#mv /Applications/FileZilla.app/ /Applications/Devs/
-#mv /Applications/Glogg.app/ /Applications/Devs/
-#mv /Applications/iTerm.app/ /Applications/Devs/
-#sudo mv /Applications/"Microsoft Remote Desktop.app"/ /Applications/Devs/
-#mv /Applications/Meld.app/ /Applications/Devs/
-#sudo mv /Applications/Monosnap.app/ /Applications/Devs/
-#mv /Applications/Postman.app/ /Applications/Devs/
-#mv /Applications/"Robo 3T.app"/ /Applications/Devs/
-#mv /Applications/"Sequel Pro.app"/ /Applications/Devs/
-#mv /Applications/Slack.app/ /Applications/Devs/
-#mv /Applications/Sourcetree.app/ /Applications/Devs/
-#mv /Applications/"Visual Studio Code.app"/ /Applications/Devs/
-#mv /Applications/VisualVM.app/ /Applications/Devs/
-#
-#mkdir /Applications/Comunication
-#mv /Applications/Telegram.app/ /Applications/Comunication/
-#sudo mv /Applications/TweetDeck.app/ /Applications/Comunication/
-#sudo mv /Applications/Twitter.app/ /Applications/Comunication/
-#mv /Applications/Whatsapp.app/ /Applications/Comunication/
-#
-#sudo mkdir /Applications/Various
-#sudo mv /Applications/"DeskApp for YouTube.app"/ /Applications/Various/
-#sudo mv /Applications/GIMP-2.10.app/ /Applications/Various/
-#sudo mv /Applications/Grammarly.app/ /Applications/Various/
-#sudo mv /Applications/HandBrake.app/ /Applications/Various/
-#sudo mv /Applications/qBittorrent.app/ /Applications/Various/
-#sudo mv /Applications/Spectacle.app/ /Applications/Various/
-#sudo mv /Applications/"The Unarchiver.app"/ /Applications/Various/
+mkdir /Applications/Devs
+mv /Applications/Dash.app/ /Applications/Devs/
+mv /Applications/FileZilla.app/ /Applications/Devs/
+mv /Applications/Glogg.app/ /Applications/Devs/
+mv /Applications/iTerm.app/ /Applications/Devs/
+mv /Applications/Meld.app/ /Applications/Devs/
+sudo mv /Applications/Monosnap.app/ /Applications/Devs/
+mv /Applications/Postman.app/ /Applications/Devs/
+mv /Applications/"Sequel Pro.app"/ /Applications/Devs/
+mv /Applications/Sourcetree.app/ /Applications/Devs/
+mv /Applications/"Visual Studio Code.app"/ /Applications/Devs/
+
+mkdir /Applications/Comunication
+sudo mv /Applications/TweetDeck.app/ /Applications/Comunication/
+sudo mv /Applications/Twitter.app/ /Applications/Comunication/
+sudo mv /Applications/Whatsapp.app/ /Applications/Comunication/
+
+sudo mkdir /Applications/Various
+sudo mv /Applications/"DeskApp for YouTube.app"/ /Applications/Various/
+sudo mv /Applications/GIMP-2.10.app/ /Applications/Various/
+sudo mv /Applications/Grammarly.app/ /Applications/Various/
+sudo mv /Applications/HandBrake.app/ /Applications/Various/
+sudo mv /Applications/qBittorrent.app/ /Applications/Various/
+sudo mv /Applications/Spectacle.app/ /Applications/Various/
+sudo mv /Applications/"The Unarchiver.app"/ /Applications/Various/
+sudo mv /Applications/unetbootin.app"/ /Applications/Various/
