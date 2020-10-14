@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Remove old branch of Remote/Local
+#?? 1.0.0
+##?
+##? Usage:
+##?   remote
+docs::eval "$@"
+
+git remote prune origin

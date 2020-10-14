@@ -14,9 +14,9 @@ source "$DOTFILES_PATH/scripts/core/_main.sh"
 docs::eval "$@"
 
 project_root_directories=(
-  "$HOME/Code/codely/"*
-  "$HOME/Code/lambdish/"*
-  "$HOME/Code/rgomezcasas/"*
+  "$HOME/projects/wata/"*
+  "$HOME/projects/amartinescalera/"*
+  "$HOME/projects/helpcode/"*
   "$DOTFILES_PATH"
 )
 [[ "$choose" == "false" ]] && filterer="fzf" || filterer="choose -c 181818"
