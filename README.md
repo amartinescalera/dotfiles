@@ -61,14 +61,18 @@
     * `.prepareApplications.sh`
 . Configure
 ```
-    zimfw uninstall & zimfw install in dot files
+        zimfw uninstall & zimfw install in dot files
 
-    dot shell zsh reload_completions
+    dot shell 
 ```
 Finally
 ```
     compinit
 ```
+darse de alta en jetbrains y dropbox
+google drive
+quitar j
+app cleaner
 
 ## ✍ Repository Contents
 
