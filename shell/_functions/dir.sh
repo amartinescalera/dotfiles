@@ -6,9 +6,6 @@ function recent_dirs() {
   cd "$(echo "$selected" | sed "s/\~/$escaped_home/")" || echo "Invalid directory"
 }
 
-#añadir jps -lvm jps -lvm | grep lang
-
-
 searchWithGrep() {
     #Search using grep
     # mv "$1" "$1.bak"
@@ -16,23 +13,15 @@ searchWithGrep() {
     history | grep $1
 }
 
-gitlog() {
-   git log -n $1 --oneline --graph
+searchWithFindText() {
+	find . -iname '*.txt' -exec grep -i $1 {} \;j
+}
+searchWithFindJava() {
+	find . -iname '*.java' -exec grep -i $1 {} \;j
 }
 
-searchWithFind() {
-	find . -name '*$1*'
-	# 👓  find . -iname '*.txt' -exec grep -i 'Optima123' {} \;j
-}
 
-video() {
-	youtube-dl -f 22  --no-check-certificate --output '$HOME/Downloads/%(title)s.%(ext)s' $1
-}
+#video-dl() {
+#	youtube-dl -f 22  --no-check-certificate --output '$HOME/Downloads/%(title)s.%(ext)s' -u $2 -p $3 $1
+#}
 
-video-dl() {
-	youtube-dl -f 22  --no-check-certificate --output '$HOME/Downloads/%(title)s.%(ext)s' -u $2 -p $3 $1
-}
-
-music() {
-	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --output '$HOME/Downloads/%(title)s.%(ext)s' $1
-}
