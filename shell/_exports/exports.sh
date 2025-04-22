@@ -3,7 +3,7 @@
 
 #PHP_PATH='/usr/local/opt/php@7.4'
 #GLOBAL_COMPOSER_PATH="$HOME/.composer"
-#PYTHON_PATH='/usr/local/opt/python'
+PYTHON_PATH='/usr/local/Cellar/python@3.11/3.11.10'
 #RUBY_PATH='/usr/local/opt/ruby'
 
 #export GEM_HOME="$HOME/.gem"
@@ -11,6 +11,9 @@
 
 export SBT_OPTS='-Xms512M -Xmx1024M -Xss2M -XX:MaxMetaspaceSize=512m -XX:ReservedCodeCacheSize=256M -Dfile.encoding=UTF8'
 export SBT_CREDENTIALS="$HOME/.sbt/.credentials"
+export ANDROID_HOME='$HOME/Library/Android/sdk'
+export ANDROID_HOME_NDK='$HOME/Library/Android/sdk/ndk-bundle'
+export ndkVersion='$HOME/Library/Android/sdk/ndk-bundle'
 
 export FZF_DEFAULT_OPTS='
   --color=pointer:#ebdbb2,bg+:#3c3836,fg:#ebdbb2,fg+:#fbf1c7,hl:#8ec07c,info:#928374,header:#fb4934
@@ -31,8 +34,8 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
 ## CUSTOM IMPLEMENTATION BY @amartinescalera
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
-export visualvm_jdkhome=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
+export visualvm_jdkhome=/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk/Contents/Home
 export SPARK_HOME=$HOME/developer/spark-2.4.1-bin-hadoop2.7
 export SBT_OPTS="-Xmx8G -Xss8G -Xss8M"
 
@@ -55,7 +58,6 @@ export path=(
 #  "$GOPATH/bin"
 #  "$GEM_HOME/bin"
 #  "$GEM_HOME/ruby/2.7.0/bin/bin"
-#  "$PYTHON_PATH/libexec/bin"
 #  "$GLOBAL_COMPOSER_PATH/vendor/bin"
   "/bin"
   "/usr/local/bin" # This contains all Brew binaries (bash...)
@@ -65,4 +67,5 @@ export path=(
 #  "/usr/local/sbin"
   "/usr/sbin"
   "/sbin"
+  "$PYTHON_PATH/libexec/bin"
 )

@@ -8,6 +8,7 @@ alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias m='mvn checkstyle:check; mvn clean install'
 alias g='./gradlew clean build'
+alias ga='./gradlew clean assemble'
 
 # Mac
 alias out="dot package outdated"
