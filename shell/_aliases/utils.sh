@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
-alias code="/Applications/Devs/Visual\ Studio\ Code.app/contents/Resources/app/bin/code"
 alias up="dot package update_all"
 alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
-alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias m='mvn checkstyle:check; mvn clean install'
 alias g='./gradlew clean build'
+alias ga='./gradlew clean assemble'
 
 # Mac
 alias out="dot package outdated"
@@ -23,7 +22,7 @@ alias ping='prettyping --nolegend'
 # 📱 Apps
 
 # Update process based on https://docs.brew.sh/FAQ
-alias upda='brew update; brew outdated; brew upgrade; brew cleanup; mas upgrade'
+alias upda='brew update; brew outdated; brew upgrade; brew cleanup' #; mas upgrade
 
 # list and remove machineSnapshot
 alias lstm='tmutil listlocalsnapshots /'

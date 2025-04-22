@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 ###############################################################################
 # Install brew and brew cask apps                                             #
 ###############################################################################
@@ -12,111 +11,201 @@
 
 declare -a brew_cask_apps=(
   'adobe-acrobat-reader'
-  'adoptopenjdk'
-  'appcleaner'
+  'angry-ip-scanner'
+  'bruno'
+  'canva'
+  'dbeaver-community'
   'docker'
   'drawio'
   'dropbox'
   'gimp'
-  'google-backup-and-sync'
-  'google-chrome'
-  'grammarly'
+  'google-drive'
   'handbrake'
   'iterm2'
-  'java'
   'jetbrains-toolbox'
   'keepassxc'
-  'onyx'
-  'mysqlworkbench'
-  'mono-mdk'
-  'postman'
-  'qbittorrent'
+  'notion'
   'qlstephen'
   'qlvideo'
-  'robo-3t'
-  'skype'
-  'slack'
-  'spectacle'
-  'suspicious-package'
-  'telegram'
   'the-unarchiver'
   'unetbootin'
-  'virtualbox'
-  'visual-studio-code'
   'visualvm'
   'vlc'
-  'vnc-viewer'
-  'Whatsapp'
 )
 
 for app in "${brew_cask_apps[@]}"; do
-  brew cask install "$app"
+  if ! brew list --cask "$app" &>/dev/null; then
+    echo "Instalando $app..."
+    brew install --cask "$app"
+  else
+    echo "$app ya está instalado"
+  fi
 done
 
 declare -a brew_cli_tools=(
-    'autojump'
-    'bat'
-    'denisidoro/tools/docpars'
-    'ffmpeg'
-    'fzf'
-    'git'
-    'gnu-sed'
-    'gradle'
-    'htop'
-    'hugo'
-    'irssi'
-    'kubernetes-cli'
-    'mas'
-    'maven'
-    'minikube'
-    'nmap'
-    'node'
-    'php'
-    'pipefail'
-    'prettyping'
-    'python'
-    'rename'
-    'sbt'
-    'scala'
-    'telnet'
-    'tldr'
-    'tree'
-    'prettyping'
-    'yarn'
-    'youtube-dl'
-#    'zsh' we are going to use zim in this case
-#    'zsh-autosuggestions'
-#    'zsh-syntax-highlighting'
+  'aom'
+  'apr'
+  'apr-util'
+  'argon2'
+  'aribb24'
+  'bat'
+  'brotli'
+  'c-ares'
+  'ca-certificates'
+  'cairo'
+  'cjson'
+  'curl'
+  'dav1d'
+  'docker-compose'
+  'ffmpeg'
+  'flac'
+  'fontconfig'
+  'freetds'
+  'freetype'
+  'frei0r'
+  'fribidi'
+  'fzf'
+  'gd'
+  'gdbm'
+  'geckodriver'
+  'giflib'
+  'git'
+  'glib'
+  'gmp'
+  'gnu-sed'
+  'gnutls'
+  'gradle'
+  'graphite2'
+  'harfbuzz'
+  'highlight'
+  'highway'
+  'htop'
+  'hugo'
+  'icu4c@77'
+  'imath'
+  'irssi'
+  'jpeg-turbo'
+  'jpeg-xl'
+  'jq'
+  'krb5'
+  'kubernetes-cli'
+  'lame'
+  'leptonica'
+  'libarchive'
+  'libass'
+  'libavif'
+  'libb2'
+  'libbluray'
+  'libdeflate'
+  'libevent'
+  'libgit2'
+  'libidn2'
+  'liblinear'
+  'libmicrohttpd'
+  'libnghttp2'
+  'libogg'
+  'libpng'
+  'libpq'
+  'librist'
+  'libsamplerate'
+  'libsndfile'
+  'libsodium'
+  'libsoxr'
+  'libssh'
+  'libssh2'
+  'libtasn1'
+  'libtiff'
+  'libtommath'
+  'libunibreak'
+  'libunistring'
+  'libuv'
+  'libvidstab'
+  'libvmaf'
+  'libvorbis'
+  'libvpx'
+  'libx11'
+  'libxau'
+  'libxcb'
+  'libxdmcp'
+  'libxext'
+  'libxrender'
+  'libzip'
+  'little-cms2'
+  'lz4'
+  'lzo'
+  'm4'
+  'maven'
+  'mbedtls'
+  'minikube'
+  'mpdecimal'
+  'mpg123'
+  'ncurses'
+  'net-snmp'
+  'nettle'
+  'nmap'
+  'node'
+  'oniguruma'
+  'opencore-amr'
+  'openexr'
+  'openjpeg'
+  'openldap'
+  'openssl@3'
+  'opus'
+  'p11-kit'
+  'pango'
+  'pcre2'
+  'php'
+  'pipx'
+  'pixman'
+  'prettyping'
+  'python'
+  'rav1e'
+  'readline'
+  'rtmpdump'
+  'rubberband'
+  'sbt'
+  'scala'
+  'sdl2'
+  'snappy'
+  'speex'
+  'srt'
+  'svt-av1'
+  'tcl-tk'
+  'telnet'
+  'tesseract'
+  'testdisk'
+  'theora'
+  'tidy-html5'
+  'tldr'
+  'tree'
+  'unbound'
+  'watch'
+  'webp'
+  'x264'
+  'x265'
+  'xorgproto'
+  'xvid'
+  'yarn'
+  'yt-dlp'
+  'zeromq'
+  'zimg'
+  'zstd'
 )
 
 for tool in "${brew_cli_tools[@]}"; do
-  brew install "$tool"
+  if ! brew list "$tool" &>/dev/null; then
+    echo "Instalando $tool..."
+    brew install "$tool"
+  else
+    echo "$tool ya está instalado"
+  fi
 done
 
-###############################################################################
-# Install Mac App Store apps                                                  #
-###############################################################################
-
-declare -a mas_apps=(
-    '1180531112' # "DeskApp for YouTube",
-    '409183694' # "Keynote",
-    '540348655' # "Monosnap",
-    '485812721' # "TweetDeck",
-    '1482454543' # "Twitter",
-)
-
-for app in "${mas_apps[@]}"; do
-  mas install "$app"
-done
+brew tap git-duet/tap
+brew install git-duet
 
 ###############################################################################
 # Configure installed apps                                                    #
 ###############################################################################
 
-# Set ZSH as the default shell
-sh -c '$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'
 
-###############################################################################
-# Moves App                                                    #
-###############################################################################
-mkddir /Applications/Devs

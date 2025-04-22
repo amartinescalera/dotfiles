@@ -9,7 +9,7 @@ set -euo pipefail
 ##?    install
 
 if [[ $# -ne 1 ]] ; then
-    echo 'some message'
+    echo 'You have to enter the computer Name'
     echo ERROR: Failed Please run with machine name
 fi
 
@@ -35,10 +35,11 @@ pause(){
 }
 
 install_for_mac(){
-  echo "installing app"
-  sh "$DOTFILES_PATH/os/mac/install_macos_apps.sh $COMPUTER_NAME"
+   echo "installing app"
+   source "$DOTFILES_PATH/os/mac/install_macos_apps.sh" $COMPUTER_NAME
   echo "configuring app"
-  sh "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh"
+  source "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh" $COMPUTER_NAME
+  mkdir "$HOME/workspace"
   exit
 }
 
@@ -49,7 +50,7 @@ install_for_linux(){
 
 configure_terminal(){
  echo "this script is in progress"
- sh "$DOTFILES_PATH/os/install_bash.sh"
+ source "$DOTFILES_PATH/os/install_bash.sh"
  exit
 }
 
@@ -94,3 +95,10 @@ do
  show_menus
  read_options
 done
+
+# 'magnet'
+Después de instalar el zimbabuenses
+
+echo >> /Users/amartin/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/amartin/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
