@@ -2,7 +2,7 @@
 # IDE settings #
 ################
 .idea/
-dotfiles_master/
+dotfiles_old/
 # OS generated files #
 ######################
 .DS_Store

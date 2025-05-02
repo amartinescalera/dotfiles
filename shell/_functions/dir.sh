@@ -20,8 +20,3 @@ searchWithFindJava() {
 	find . -iname '*.java' -exec grep -i $1 {} \;j
 }
 
-
-#video-dl() {
-#	youtube-dl -f 22  --no-check-certificate --output '$HOME/Downloads/%(title)s.%(ext)s' -u $2 -p $3 $1
-#}
-

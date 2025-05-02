@@ -39,6 +39,7 @@ install_for_mac(){
   sh "$DOTFILES_PATH/os/mac/install_macos_apps.sh $COMPUTER_NAME"
   echo "configuring app"
   sh "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh"
+  sh mkdir "$HOME/workspace"
   exit
 }
 

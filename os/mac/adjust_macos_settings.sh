@@ -6,25 +6,17 @@ COMPUTER_NAME="$1"
 # 📱 Dock
 ###############################################################################
 
-defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-delay -float 0.05
-defaults write com.apple.dock autohide-time-modifier -float 0.25
-defaults write com.apple.dock magnification -bool true
-defaults write com.apple.dock tilesize -int 70
-defaults write com.apple.dock largesize -int 80
-defaults write com.apple.dock minimize-to-application -bool true
-defaults write com.apple.dock mineffect -string "scale"
-defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
-defaults write com.apple.dock showhidden -bool true
-defaults write com.apple.dock show-recents -bool false
-defaults write com.apple.dock show-process-indicators -bool true
+defaults write com.apple.dock autohide -bool true                                  # Oculta automáticamente el Dock cuando no se está usando.
+defaults write com.apple.dock magnification -bool true                             # Activa la ampliación de iconos al pasar el cursor.
+defaults write com.apple.dock tilesize -int 70                                     # Define el tamaño base de los iconos del Dock.
+defaults write com.apple.dock largesize -int 80                                    # Define el tamaño máximo al hacer magnify (ampliación).
+defaults write com.apple.dock minimize-to-application -bool true                   # Minimiza ventanas en el ícono de la app en lugar de al lado derecho del Dock.
+defaults write com.apple.dock mineffect -string "scale"                            # Cambia el efecto de minimizar a “scale” (más rápido).
+defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true   # Permite arrastrar elementos sobre íconos del Dock para activar acciones.
+defaults write com.apple.dock showhidden -bool true                                # Muestra íconos de apps ocultas con transparencia.
+defaults write com.apple.dock show-recents -bool false                             # Elimina las apps recientes del lado derecho del Dock.
+defaults write com.apple.dock show-process-indicators -bool true                   # Muestra el punto debajo de las apps abiertas.
 
-
-
-# Add a spacer to the left side of the Dock (where the applications are)
-#defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-# Add a spacer to the right side of the Dock (where the Trash is)
-#defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
 
 ###############################################################################
 # 🎛 Mission Control
@@ -36,43 +28,10 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
-# Hot corners
-# Possible values:
-#  0: no-op
-#  2: Mission Control
-#  3: Show application windows
-#  4: Desktop
-#  5: Start screen saver
-#  6: Disable screen saver
-#  7: Dashboard
-# 10: Put display to sleep
-# 11: Launchpad
-# 12: Notification Center
-
-# Top right screen corner → Show application windows
-# defaults write com.apple.dock wvous-tr-corner -int 3
-# defaults write com.apple.dock wvous-tr-modifier -int 0
-
-# Top left screen corner → Mission Control
-# defaults write com.apple.dock wvous-tl-corner -int 2
-# defaults write com.apple.dock wvous-tl-modifier -int 0
-
-# Bottom left screen corner → Start screen saver
-# defaults write com.apple.dock wvous-bl-corner -int 5
-# defaults write com.apple.dock wvous-bl-modifier -int 0
-
-# Bottom right screen corner → Desktop
-# defaults write com.apple.dock wvous-br-corner -int 4
-# defaults write com.apple.dock wvous-br-modifier -int 0
-
-# move to bottom
-# defaults write com.apple.dock orientation bottom
-# move to left
-# defaults write com.apple.dock orientation left
-# move to right
+# Set bar to the right
 defaults write com.apple.dock orientation right
-#restart Dock
 
+#restart Dock
 killall Dock
 
 ###############################################################################
@@ -85,8 +44,6 @@ defaults write -g InitialKeyRepeat -int 15
 # Disable press-and-hold for keys in favour of key repeat
 defaults write -g ApplePressAndHoldEnabled -bool true
 
-# Shortcut to maximize window
-defaults write -g NSUserKeyEquivalents -dict-add "Zoom" -string "@~^f"
 
 # Disable automatic modifications of entered text
 defaults write -g NSAutomaticCapitalizationEnabled -bool false

@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-alias code="/Applications/Devs/Visual\ Studio\ Code.app/contents/Resources/app/bin/code"
 alias up="dot package update_all"
 alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
-alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias m='mvn checkstyle:check; mvn clean install'
 alias g='./gradlew clean build'
