@@ -27,7 +27,6 @@ declare -a brew_cask_apps=(
   'dropbox'
   'gimp'
   'google-drive'
-  'google-chrome'
   'handbrake'
   'iterm2'
   'jetbrains-toolbox'
