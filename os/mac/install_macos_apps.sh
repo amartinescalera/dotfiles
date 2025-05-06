@@ -26,7 +26,7 @@ declare -a brew_cask_apps=(
   'drawio'
   'dropbox'
   'gimp'
-  'google-backup-and-sync'
+  'google-drive'
   'google-chrome'
   'handbrake'
   'iterm2'
@@ -44,7 +44,12 @@ declare -a brew_cask_apps=(
 )
 
 for app in "${brew_cask_apps[@]}"; do
-  brew install --cask "$app"
+  if ! brew list --cask "$app" &>/dev/null; then
+    echo "Instalando $app..."
+    brew install --cask "$app"
+  else
+    echo "$app ya está instalado"
+  fi
 done
 
 declare -a brew_cli_tools=(
