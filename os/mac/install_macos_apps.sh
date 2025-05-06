@@ -25,7 +25,6 @@ declare -a brew_cask_apps=(
   'docker'
   'drawio'
   'dropbox'
-  'filezilla'
   'gimp'
   'google-backup-and-sync'
   'google-chrome'
