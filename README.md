@@ -48,6 +48,9 @@ Install chrome
     curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 ```
 
+# Set ZSH as the default shell
+sh -c '$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'
+
 5. Clone this repository: 
 ```
     git clone https://github.com/amartinescalera/dotfile.git ~/.dotfiles
