@@ -4,7 +4,7 @@
 # Install brew and brew cask apps                                             #
 ###############################################################################
 curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+# source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java 21.0.7-librca
 ###############################################################################
 # Install brew and brew cask apps                                             #
