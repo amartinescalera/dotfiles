@@ -37,7 +37,7 @@
     git —version
 ```
 
-3. Generate ssh for Mac / Linux following the command:
+3. Generate ssh for Mac / Linux following the command y hay que mover las claves generadas a la carpeta.ssh 
 
    https://docs.github.com/es/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 

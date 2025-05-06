@@ -9,7 +9,7 @@ set -euo pipefail
 ##?    install
 
 if [[ $# -ne 1 ]] ; then
-    echo 'some message'
+    echo 'You have to enter the computer Name'
     echo ERROR: Failed Please run with machine name
 fi
 
@@ -36,9 +36,9 @@ pause(){
 
 install_for_mac(){
   echo "installing app"
-  sh "$DOTFILES_PATH/os/mac/install_macos_apps.sh $COMPUTER_NAME"
+  source "$DOTFILES_PATH/os/mac/install_macos_apps.sh $COMPUTER_NAME"
   echo "configuring app"
-  sh "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh"
+  source "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh"
   sh mkdir "$HOME/workspace"
   exit
 }
@@ -50,7 +50,7 @@ install_for_linux(){
 
 configure_terminal(){
  echo "this script is in progress"
- sh "$DOTFILES_PATH/os/install_bash.sh"
+ source "$DOTFILES_PATH/os/install_bash.sh"
  exit
 }
 
