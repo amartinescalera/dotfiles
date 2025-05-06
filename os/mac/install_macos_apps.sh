@@ -208,8 +208,8 @@ for tool in "${brew_cli_tools[@]}"; do
   fi
 done
 
-sh brew tap git-duet/tap
-sh brew install git-duet
+brew tap git-duet/tap
+brew install git-duet
 
 ###############################################################################
 # Configure installed apps                                                    #
