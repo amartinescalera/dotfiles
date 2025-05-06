@@ -27,6 +27,8 @@
 
 ## ☝ Instructions
 
+Install chrome
+
 1. Install Brew in the mac with fhe following command (Tested Sept 2020)
 ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"

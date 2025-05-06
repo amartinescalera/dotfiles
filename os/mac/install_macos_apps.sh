@@ -63,13 +63,10 @@ declare -a brew_cli_tools=(
   'c-ares'
   'ca-certificates'
   'cairo'
-  'certifi'
   'cjson'
   'curl'
-  'curl-openssl'
   'dav1d'
   'docker-compose'
-  'docpars'
   'ffmpeg'
   'flac'
   'fontconfig'
@@ -81,10 +78,8 @@ declare -a brew_cli_tools=(
   'gd'
   'gdbm'
   'geckodriver'
-  'gettext'
   'giflib'
   'git'
-  'git-duet'
   'glib'
   'gmp'
   'gnu-sed'
@@ -96,7 +91,6 @@ declare -a brew_cli_tools=(
   'highway'
   'htop'
   'hugo'
-  'icu4c@76'
   'icu4c@77'
   'imath'
   'irssi'
@@ -132,7 +126,6 @@ declare -a brew_cli_tools=(
   'libtasn1'
   'libtiff'
   'libtommath'
-  'libtool'
   'libunibreak'
   'libunistring'
   'libuv'
@@ -166,7 +159,6 @@ declare -a brew_cli_tools=(
   'openexr'
   'openjpeg'
   'openldap'
-  'openssl@1.1'
   'openssl@3'
   'opus'
   'p11-kit'
@@ -177,8 +169,6 @@ declare -a brew_cli_tools=(
   'pixman'
   'prettyping'
   'python'
-  'python-certifi'
-  'python-packaging'
   'rav1e'
   'readline'
   'rtmpdump'
@@ -205,7 +195,6 @@ declare -a brew_cli_tools=(
   'x265'
   'xorgproto'
   'xvid'
-  'xz'
   'yarn'
   'yt-dlp'
   'zeromq'
@@ -214,8 +203,16 @@ declare -a brew_cli_tools=(
 )
 
 for tool in "${brew_cli_tools[@]}"; do
-  brew install "$tool"
+  if ! brew list "$tool" &>/dev/null; then
+    echo "Instalando $tool..."
+    brew install "$tool"
+  else
+    echo "$tool ya está instalado"
+  fi
 done
+
+sh brew tap git-duet/tap
+sh brew install git-duet
 
 ###############################################################################
 # Configure installed apps                                                    #
