@@ -36,7 +36,7 @@ pause(){
 
 install_for_mac(){
   echo "installing app"
-  source "$DOTFILES_PATH/os/mac/install_macos_apps.sh $COMPUTER_NAME"
+  source "$DOTFILES_PATH/os/mac/install_macos_apps.sh" $COMPUTER_NAME
   echo "configuring app"
   source "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh"
   sh mkdir "$HOME/workspace"
