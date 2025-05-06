@@ -31,7 +31,6 @@ declare -a brew_cask_apps=(
   'iterm2'
   'jetbrains-toolbox'
   'keepassxc'
-  'mono-mdk'
   'notion'
   'qlstephen'
   'qlvideo'
