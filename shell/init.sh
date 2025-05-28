@@ -11,5 +11,3 @@ for aliasToSource in "$DOTFILES_PATH/shell/_aliases/"*; do source "$aliasToSourc
 for exportToSource in "$DOTFILES_PATH/shell/_exports/"*; do source "$exportToSource"; done
 # Register all functions
 for functionToSource in "$DOTFILES_PATH/shell/_functions/"*; do source "$functionToSource"; done
-
-# conda config --set changeps1 false

@@ -65,7 +65,7 @@ sh -c '$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
     * `.adjust_macos_settings.sh`
 . Configure
 ```
-        zimfw uninstall & zimfw install in dot files
+        zimfw uninstall & zimfw install
 
     dot shell 
 ```
@@ -98,14 +98,26 @@ This script will modify system preferences. We would recommend you to [take a lo
 
 * Dock: Automatically hide the dock with a fewer delay and animation times
 * Mission Control: Add Hot corners behaviour and reduce the animation time
-* Safari & WebKit: Allow hitting the Backspace key to go to the previous page + show full URL + disable automatic spelling corrections…
 * Others: Disable the sound effects on boot + always show scrollbars + disable automatic capitalization + Avoid creating .DS_Store files on network or USB volumes + Maximize windows with `Ctrl+alt+Cmd+f`…
 
 
 ## 💁 About
 
-® This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles). 
+® This is my own configuration from CodelyTV (https://github.com/CodelyTV/dotfiles). I did some changes so if you want a better understanding, I will take a look in the original.
 
 ## ⚖ License
 
 The MIT License (MIT). Please see [License](LICENSE) for more information.
+
+
+# Load new settings before rebuilding the index
+sudo killall mds
+
+# Make sure indexing is enabled for the main volume
+sudo mdutil -i off /
+sudo rm -rf /.Spotlight-V100
+
+# Rebuild the index from scratch
+sudo mdutil -i on /
+sudo mdutil -E /
+mdutil -s /

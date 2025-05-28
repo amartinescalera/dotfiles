@@ -35,11 +35,11 @@ pause(){
 }
 
 install_for_mac(){
-  echo "installing app"
-  source "$DOTFILES_PATH/os/mac/install_macos_apps.sh" $COMPUTER_NAME
+   echo "installing app"
+   source "$DOTFILES_PATH/os/mac/install_macos_apps.sh" $COMPUTER_NAME
   echo "configuring app"
-  source "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh"
-  sh mkdir "$HOME/workspace"
+  source "$DOTFILES_PATH/os/mac/adjust_macos_settings.sh" $COMPUTER_NAME
+  mkdir "$HOME/workspace"
   exit
 }
 
@@ -96,4 +96,9 @@ do
  read_options
 done
 
-  'magnet'
+# 'magnet'
+Después de instalar el zimbabuenses
+
+echo >> /Users/amartin/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/amartin/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
