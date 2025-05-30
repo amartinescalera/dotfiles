@@ -12,3 +12,5 @@ Thumbs.db
 *.iml
 /**/***/*private*
 dotfiles-1.0.1
+scripts/aws
+scripts/k8s

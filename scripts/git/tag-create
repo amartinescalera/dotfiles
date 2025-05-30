@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? show last commit
+#?? 1.0.0
+##?
+##? Usage:
+##?     last-commit <number-of-commit>
+docs::eval "$@"
+
+git log --oneline --graph --decorate --all -n $1
+
+# push tag local
+git tag $1
+# push origin remote
+git push origin $1
+
+echo "😬 Dooone!"
